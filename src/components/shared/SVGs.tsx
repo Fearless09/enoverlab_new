@@ -1,4 +1,3 @@
-import exp from "constants";
 import { ComponentProps, FC } from "react";
 
 export const DropdownSVG: FC<ComponentProps<"svg">> = (props) => (
