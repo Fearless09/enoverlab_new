@@ -1,15 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #323232;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-primary-50: #2fc3f8;
+  --color-primary-100: #dbf5ff;
+  --color-primary-200: #0088ff;
+  --color-primary-300: #0046ff;
+  --color-primary-400: #003ad4;
+
+  --color-secondary: #323232;
+  --color-secondary-100: #c5c5c5;
+  --color-secondary-200: #f9f9f9;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+  --breakpoint-ipad: 992px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +36,23 @@
 }
 
 body {
-  background: var(--background);
+  background: #f3f3ff;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@utility wrapper {
+  @apply mx-auto w-full max-w-[1280px];
+}
+
+@utility scale-98 {
+  @apply scale-[.98];
+}
+
+@utility transition-300 {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+@utility card {
+  @apply wrapper relative flex items-start justify-between gap-10 overflow-clip rounded-[30px] border-2 border-white bg-gradient-to-r;
 }
