@@ -7,18 +7,11 @@ const Foundation = () => {
       variant="secondary"
       title="Foundation Partnership (NGO)"
       subtitle={
-        <>
-          Amplifies social impact goals by offering practical, scalable skills
-          to beneficiaries.
-          <br />
-          Attracts funding and donor interest through measurable outcomes like
-          employment.
-          <br />
-          Promotes sustainable development goals such as education, innovation,
-          and employment.
-          <br />
-          Shared platforms for awareness campaigns, events, and workshops.
-        </>
+        <ul className="flex flex-col gap-3">
+          {lists.map((list, index) => (
+            <li key={index}>{list}</li>
+          ))}
+        </ul>
       }
       imgSrc="/foundation.svg"
     />
@@ -26,3 +19,9 @@ const Foundation = () => {
 };
 
 export default Foundation;
+
+const lists = [
+  "Amplifies social impact goals by offering practical, scalable skills to beneficiaries.",
+  "Promotes sustainable development goals such as education, innovation, and employment.",
+  "Shared platforms for awareness campaigns, events, and workshops.",
+];

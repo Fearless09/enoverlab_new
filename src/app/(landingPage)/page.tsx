@@ -13,7 +13,7 @@ export default function Home() {
     <section className="flex min-h-screen flex-col">
       <Navbar />
       <Hero />
-      <h1 className="mt-20 mb-8 px-4 text-center text-[40px] font-semibold">
+      <h1 className="mt-12 px-4 text-center text-[30px] font-semibold md:mt-20 md:text-[40px]">
         Types of Partnership
       </h1>
       <Training />

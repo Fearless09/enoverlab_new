@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="py-2 px-4">
+    <nav className="px-4 py-2">
       <header className="wrapper flex items-center justify-between gap-10 rounded-[30px] bg-[#F9F9F9] px-5 py-2.5">
         <Link
           href={"/"}
@@ -26,7 +26,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className="flex items-center gap-7">
+        <ul className="ipad:flex hidden items-center gap-7">
           {navs.map((item, index) => (
             <Link
               href={item.href}

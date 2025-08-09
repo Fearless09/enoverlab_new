@@ -7,15 +7,11 @@ const Community = () => {
       variant="primary"
       title="Community Partnership"
       subtitle={
-        <>
-          Builds local capacity in underserved areas.
-          <br />
-          Encourages economic growth through skill empowerment.
-          <br />
-          Fosters goodwill between the institute and grassroots communities.
-          <br />
-          Bridges the gap between tech knowledge and local development.
-        </>
+        <ul className="flex flex-col gap-3">
+          {lists.map((list, index) => (
+            <li key={index}>{list}</li>
+          ))}
+        </ul>
       }
       imgSrc="/community.svg"
     />
@@ -23,3 +19,10 @@ const Community = () => {
 };
 
 export default Community;
+
+const lists = [
+  "Builds local capacity in underserved areas.",
+  "Encourages economic growth through skill empowerment.",
+  "Fosters goodwill between the institute and grassroots communities.",
+  "Bridges the gap between tech knowledge and local development.",
+];

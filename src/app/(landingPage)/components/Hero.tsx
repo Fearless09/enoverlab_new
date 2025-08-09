@@ -5,10 +5,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative px-4">
-      <section className="card mt-[70px] from-[#DBEDFE] to-[#F4EFEC] py-24 ps-20 pe-10">
-        <main className="w-full max-w-[360px] flex-1 ps-20">
-          <h1 className="text-[48px] font-semibold">Partner with Enoverlab</h1>
+    <section className="relative mt-10 px-4 md:mt-[70px]">
+      <section className="card ipad:flex-row ipad:py-24 flex-col from-[#DBEDFE] to-[#F4EFEC] px-4 py-10 md:px-10 lg:pl-20">
+        <main className="ipad:mx-0 ipad:text-left mx-auto w-full max-w-[360px] flex-1 text-center xl:pl-20">
+          <h1 className="text-[36px] font-semibold md:text-[48px]">
+            Partner with Enoverlab
+          </h1>
           <p className="my-8 font-medium">
             Join force with the platform trusted by 100,000 industry to provide
             reliable and Accountable services
@@ -19,7 +21,7 @@ const Hero = () => {
           </Button>
         </main>
 
-        <main className="sticky top-12 aspect-[6.2/3.4] max-w-[620px] flex-1 overflow-hidden rounded-[30px]">
+        <main className="ipad:sticky ipad:top-12 ipad:mx-0 rounded- relative mx-auto aspect-[6.2/3.4] w-full max-w-[620px] flex-1 overflow-hidden md:rounded-[30px]">
           <Image
             alt=""
             src={"/hero.svg"}

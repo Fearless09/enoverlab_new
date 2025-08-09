@@ -22,16 +22,23 @@ const SectionCard: Props = ({
     <section className="mt-8 px-4">
       <section
         className={cn(
-          "card p-10",
+          "card flex-col px-4 py-8 md:flex-row md:p-10",
           {
-            "from-[#E7ECFE] to-[#D9ECFF] pe-16": variant === "primary",
-            "flex-row-reverse from-[#E8F5FC] to-[#FFEBDF] ps-16":
+            "from-[#E7ECFE] to-[#D9ECFF] md:pe-16": variant === "primary",
+            "from-[#E8F5FC] to-[#FFEBDF] md:flex-row-reverse md:ps-16":
               variant === "secondary",
           },
           className,
         )}
       >
-        <main className="aspect-[4.16/5.3] w-full max-w-[416px] flex-1">
+        <main
+          className={cn(
+            "mx-auto aspect-[4.16/5.3] w-full max-w-[416px] flex-1 md:mx-0",
+            {
+              "hidden md:inline-block": !imgSrc,
+            },
+          )}
+        >
           {imgSrc && (
             <div className="relative aspect-[4.16/5.3] overflow-hidden rounded-[30px] border-2 border-white">
               <Image
@@ -45,10 +52,12 @@ const SectionCard: Props = ({
           )}
         </main>
 
-        <main className="sticky top-10 w-full max-w-[477px] flex-1">
-          <h1 className="max-w-[328px] text-[24px] font-semibold">{title}</h1>
+        <main className="mx-auto w-full max-w-[477px] flex-1 text-center md:sticky md:top-10 md:mx-0 md:text-left">
+          <h1 className="text-[24px] font-semibold md:max-w-[328px]">
+            {title}
+          </h1>
 
-          <div className="my-10 text-lg font-medium">{subtitle}</div>
+          <div className="my-10 text-left text-lg font-medium">{subtitle}</div>
 
           <Button className="w-[150px] rounded-full" variant="secondary">
             Explore

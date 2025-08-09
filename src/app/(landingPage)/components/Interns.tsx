@@ -7,16 +7,11 @@ const Interns = () => {
       variant="primary"
       title="Partnership for Internship Placement"
       subtitle={
-        <>
-          Access to a pool of trained and job-ready product management, design,
-          and development talent.
-          <br />
-          Reduces recruitment costs and training time.
-          <br />
-          Fresh ideas and innovative approaches from interns.
-          <br />
-          Strengthens your talent pipeline for future hires.
-        </>
+        <ul className="flex flex-col gap-3">
+          {lists.map((list, index) => (
+            <li key={index}>{list}</li>
+          ))}
+        </ul>
       }
       imgSrc="/interns.svg"
     />
@@ -24,3 +19,10 @@ const Interns = () => {
 };
 
 export default Interns;
+
+const lists = [
+  "Access to a pool of trained and job-ready product management, design, and development talent.",
+  "Reduces recruitment costs and training time.",
+  "Fresh ideas and innovative approaches from interns.",
+  "Strengthens your talent pipeline for future hires.",
+];
