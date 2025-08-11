@@ -40,7 +40,7 @@ const SectionCard: Props = ({
           )}
         >
           {imgSrc && (
-            <div className="relative aspect-[4.16/5.3] overflow-hidden rounded-[30px] border-2 border-white">
+            <div className="relative aspect-[4.16/5.3] overflow-hidden">
               <Image
                 alt={title}
                 src={imgSrc}
