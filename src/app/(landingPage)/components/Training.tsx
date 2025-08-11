@@ -7,6 +7,7 @@ const Training = () => {
     <SectionCard
       variant="primary"
       title="Partnership for Training Government Workers"
+      imgSrc="/trainning.svg"
       subtitle={
         <>
           <h6 className="mt-11 mb-8 text-xl font-semibold text-[#404040]">
