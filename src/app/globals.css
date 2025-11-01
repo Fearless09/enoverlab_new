@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #323232;
-}
+@import 'tailwindcss';
 
 @theme inline {
   --color-background: var(--background);
@@ -23,22 +18,9 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --font-plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
 
   --breakpoint-ipad: 992px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: #f3f3ff;
-  color: #323232;
-  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 @utility wrapper {
@@ -54,5 +36,23 @@ body {
 }
 
 @utility card {
-  @apply wrapper relative flex items-start justify-between gap-10 overflow-clip rounded-[12px] border-2 border-white bg-gradient-to-r md:rounded-[30px];
+  @apply wrapper relative flex items-start justify-between gap-10 overflow-clip rounded-[12px] border-2 border-white bg-linear-to-r md:rounded-[30px];
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #323232;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #f3f3ff;
+  color: #323232;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
