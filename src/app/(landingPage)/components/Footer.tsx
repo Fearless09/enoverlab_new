@@ -21,8 +21,7 @@ export default function Footer() {
               width={225}
               height={0}
               alt="Enoverlab Logo"
-              objectFit="contain"
-              className="w-[138px] sm:w-[225px]"
+              className="w-[138px] object-contain sm:w-[225px]"
             />
             <p className="text-secondary mt-4 text-base leading-[160%] font-light">
               Building impactful product managers for today, tomorrow and the
