@@ -1,32 +1,34 @@
-import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "lucide-react";
+import UiLink from "@/components/ui/UiLink";
 import Image from "next/image";
-import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative mt-10 px-4 md:mt-[70px]">
-      <section className="card ipad:flex-row ipad:py-24 flex-col from-[#DBEDFE] to-[#F4EFEC] px-4 py-10 md:px-10 lg:pl-20">
-        <main className="ipad:mx-0 ipad:text-left mx-auto w-full max-w-[360px] flex-1 text-center xl:pl-20">
-          <h1 className="text-[36px] font-semibold md:text-[48px]">
-            Partner with Enoverlab
+    <section id="hero" className="relative mt-10 px-4 md:mt-[64px]">
+      <section className="wrapper flex items-center justify-between gap-x-10 gap-y-16">
+        <main className="text-primary-400 max-w-[541px] flex-1 text-pretty">
+          <h1 className="text-[60px] font-medium">
+            Empowering Tech Talents WorldWide
           </h1>
-          <p className="my-8 font-medium">
-            Join force with the platform trusted by 100,000 industry to provide
-            reliable and Accountable services
+          <p className="mt-2 text-xl font-light">
+            At Enoverlab, we equip aspiring innovators with the skills, mindset,
+            and community they need to thrive in the global tech ecosystem.
           </p>
-          <Button variant="secondary">
-            Apply Now
-            <ArrowRight className="transition-300 size-5 group-hover:translate-x-0.5" />
-          </Button>
+
+          <div className="mt-5.5 flex items-center gap-8">
+            <UiLink variant="outline" href="/partnership">
+              Partner with us
+            </UiLink>
+            <UiLink variant="outline" href="/training_programs">
+              Join as a student
+            </UiLink>
+          </div>
         </main>
 
-        <main className="ipad:sticky ipad:top-12 ipad:mx-0 rounded- relative mx-auto aspect-[6.2/3.4] w-full max-w-[620px] flex-1 overflow-hidden md:rounded-[30px]">
+        <main className="relative aspect-[5.23/4.05] max-w-[523px] flex-1 overflow-clip rounded">
           <Image
             alt=""
-            src={"/hero.svg"}
+            src={"/hero_1.png"}
             fill
-            priority
             className="object-cover object-center"
           />
         </main>

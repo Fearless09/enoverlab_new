@@ -1,18 +1,17 @@
 "use client";
-import { Button } from "@/components/ui/Button";
+import UiLink from "@/components/ui/UiLink";
 import { navs } from "@/data/nav_data";
 import { cn } from "@/utilities/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
     <nav className="px-4 py-2">
-      <header className="wrapper flex items-center justify-between gap-10 rounded-[30px] bg-[#F9F9F9] px-5 py-2.5">
+      <header className="wrapper flex items-center justify-between gap-10 rounded-[30px] bg-[#F9F9F9] py-2.5">
         <Link
           href={"/"}
           className="relative h-[42px] w-[145px] overflow-hidden"
@@ -32,7 +31,7 @@ const Navbar = () => {
               href={item.href}
               key={index}
               className={cn(
-                "transition-300 hover:text-primary-300 font-medium",
+                "transition-300 hover:text-primary-400 text-base font-medium",
                 {
                   "text-primary-400": pathname === item.href,
                 },
@@ -43,7 +42,9 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <Button size="sm">Contact Us</Button>
+        <UiLink size="sm" href="/contact" className="px-5">
+          Contact Us
+        </UiLink>
       </header>
     </nav>
   );

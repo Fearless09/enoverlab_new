@@ -1,6 +1,7 @@
 export const navs = [
-  { name: "Programs", href: "/programs" },
-  { name: "Blog", href: "/blog" },
-  { name: "Free Resources", href: "/resources" },
-  { name: "Partnership", href: "/" },
+  { name: "Home", href: "/" },
+  { name: "Training Programs", href: "/training_programs" },
+  { name: "Hire", href: "/hire" },
+  { name: "Sponsor", href: "/sponsor" },
+  { name: "Partnership", href: "/partnership" },
 ];
