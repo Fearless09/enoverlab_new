@@ -9,12 +9,15 @@ export type State = {
   maximumStep: number;
 };
 
-export type Action = {
-  type: "UPDATE_STEP" | "NEXT_STEP";
-  payload: {
-    step: number;
-  };
-};
+export type Action =
+  | {
+      type: "UPDATE_STEP";
+      payload: {
+        step: number;
+      };
+    }
+  | { type: "NEXT_STEP" | "COMPLETED_STEP" }
+  | { type: "COMPLETED_STEP" };
 
 /**
  * useSteps is a hook that manages the state of a step-by-step process.
@@ -52,16 +55,15 @@ const useSteps = ({
 export default useSteps;
 
 function reducer(state: State, action: Action): State {
-  const { payload, type } = action;
-
-  switch (type) {
+  switch (action.type) {
     case "UPDATE_STEP": {
+      const { payload, type } = action;
       if (payload.step > state.completedStep + 1) return state;
       return { ...state, step: payload.step };
     }
 
     case "NEXT_STEP": {
-      if (payload.step > state.maximumStep) {
+      if (state.step + 1 > state.maximumStep) {
         return {
           ...state,
           completed: true,
@@ -69,8 +71,20 @@ function reducer(state: State, action: Action): State {
           completedStep: state.maximumStep,
         };
       }
-      return { ...state, step: payload.step, completedStep: payload.step - 1 };
+      return {
+        ...state,
+        step: state.step + 1,
+        completedStep: state.completedStep + 1,
+      };
     }
+
+    case "COMPLETED_STEP":
+      return {
+        ...state,
+        step: state.maximumStep,
+        completedStep: state.maximumStep,
+        completed: true,
+      };
 
     default:
       return state;

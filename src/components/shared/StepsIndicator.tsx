@@ -22,7 +22,12 @@ type Props = FC<{
  * It also renders a line between each step, with the completed steps line being highlighted.
  */
 
-const Steps: Props = ({ completedStep, dispatcher, step, stepsTitle }) => {
+const StepsIndicator: Props = ({
+  completedStep,
+  dispatcher,
+  step,
+  stepsTitle,
+}) => {
   return (
     <section className="flex items-center justify-center gap-6">
       {stepsTitle.map((title, index) => (
@@ -73,4 +78,4 @@ const Steps: Props = ({ completedStep, dispatcher, step, stepsTitle }) => {
   );
 };
 
-export default Steps;
+export default StepsIndicator;
