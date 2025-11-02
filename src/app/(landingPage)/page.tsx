@@ -1,3 +1,5 @@
+import Companies from "./components/Companies";
+import CTA from "./components/Cta";
 import Discover from "./components/Discover";
 import Hero from "./components/Hero";
 import Partners from "./components/Partners";
@@ -10,6 +12,8 @@ export default function Home() {
       <Discover />
       <Sponsors />
       <Partners />
+      <CTA />
+      <Companies />
     </>
   );
 }

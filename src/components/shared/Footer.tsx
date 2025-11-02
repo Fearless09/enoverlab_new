@@ -11,7 +11,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-100 font-plus-jakarta-sans mt-20 px-4 py-20">
+    <footer className="bg-primary-100 font-plus-jakarta-sans px-4 py-20">
       <section className="wrapper">
         <section className="flex flex-wrap gap-16">
           {/* Enoverlab Image and Social Links */}

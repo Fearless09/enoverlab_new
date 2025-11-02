@@ -10,7 +10,10 @@ const Partners = () => {
 
         <main className="grid grid-cols-3 gap-5">
           {partners.map(({ img, name, role, text }, index) => (
-            <div key={index} className="rounded-2xl bg-[#E0E9FE] px-5 py-8">
+            <div
+              key={index}
+              className="rounded-2xl bg-[#E0E9FE] px-5 py-8 shadow"
+            >
               <div className="relative size-15 overflow-clip rounded-full border-2 border-black/20">
                 <Image
                   alt={name}
