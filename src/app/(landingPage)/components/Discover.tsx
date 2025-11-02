@@ -12,13 +12,13 @@ const Discover = () => {
           </p>
         </header>
 
-        <main className="mt-15 grid grid-cols-4 gap-6 text-[#323232]">
+        <main className="text-secondary mt-15 grid grid-cols-4 gap-6">
           {discovers.map(({ img, subtitle, title }, index) => (
             <div
               className="transition-300 min-h-[370px] rounded-xl bg-white p-2.5 hover:shadow-md"
               key={index}
             >
-              <div className="relative aspect-[2.74/1.47] overflow-clip rounded-[8px]">
+              <div className="relative aspect-[2.74/1.47] overflow-clip rounded-lg">
                 <Image
                   alt={title}
                   src={img}

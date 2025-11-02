@@ -34,76 +34,26 @@ export const socialLinks: SocialLinksType[] = [
   },
 ];
 
-export type OtherLinksType = {
-  name: string;
-  href: string;
+type FooterLink = {
+  [key: string]: {
+    name: string;
+    href: string;
+  }[];
 };
 
-export const programs: OtherLinksType[] = [
-  {
-    name: "Basic Program",
-    href: "/",
-  },
-  {
-    name: "Adanced Program",
-    href: "/",
-  },
-  {
-    name: "Executive Coaching",
-    href: "/",
-  },
-  {
-    name: "Corporate Training",
-    href: "/",
-  },
-  {
-    name: "Onsite Training",
-    href: "/",
-  },
-];
-
-export const resources: OtherLinksType[] = [
-  {
-    name: "Blog",
-    href: "/",
-  },
-  {
-    name: "E-books",
-    href: "/",
-  },
-  {
-    name: "Product Sessions",
-    href: "/",
-  },
-  {
-    name: "Career Advisor",
-    href: "/",
-  },
-];
-
-export const company: OtherLinksType[] = [
-  {
-    name: "About us",
-    href: "/",
-  },
-  {
-    name: "Accreditation",
-    href: "/",
-  },
-  {
-    name: "Our Teams",
-    href: "/",
-  },
-  {
-    name: "Review",
-    href: "/",
-  },
-  {
-    name: "Community",
-    href: "/",
-  },
-  {
-    name: "Contact us",
-    href: "/",
-  },
-];
+export const footerLinks: FooterLink = {
+  programs: [
+    { name: "Basic Program", href: "/training_programs" },
+    { name: "Advanced Program", href: "/training_programs" },
+  ],
+  ["free resource"]: [
+    { name: "Internship", href: "" },
+    { name: "Hiring", href: "" },
+    { name: "Training", href: "" },
+    { name: "Events", href: "" },
+  ],
+  company: [
+    { name: "Community", href: "/contact_us" },
+    { name: "Contact us", href: "/contact_us" },
+  ],
+};

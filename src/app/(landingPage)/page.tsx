@@ -1,4 +1,4 @@
-import Companies from "./components/Companies";
+import Companies from "@/components/shared/Companies";
 import CTA from "./components/Cta";
 import Discover from "./components/Discover";
 import Hero from "./components/Hero";

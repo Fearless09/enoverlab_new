@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative mt-10 px-4 md:mt-[64px]">
+    <section id="hero" className="relative mt-10 md:mt-16">
       <section className="wrapper flex items-center justify-between gap-x-10 gap-y-16">
         <main className="text-primary-400 max-w-[541px] flex-1 text-pretty">
           <h1 className="text-[60px] font-medium">

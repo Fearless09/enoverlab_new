@@ -42,7 +42,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <UiLink size="sm" href="/contact" className="px-5">
+        <UiLink size="sm" href="/contact_us" className="px-5">
           Contact Us
         </UiLink>
       </header>
