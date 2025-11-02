@@ -1,5 +1,5 @@
+import { Gmail, Telephone } from "@/components/shared/SVGs";
 import UiLink from "@/components/ui/UiLink";
-import { Mail, PhoneIncoming } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -20,7 +20,7 @@ const CTA = () => {
           {contacts.map(({ Icon, links }, index) => (
             <div key={index} className="flex items-center gap-4">
               <span className="flex size-11 items-center justify-center rounded-md bg-white">
-                <Icon className="size-7" />
+                <Icon className="size-6.5" />
               </span>
 
               <ul className="flex flex-col gap-px">
@@ -44,6 +44,6 @@ const CTA = () => {
 export default CTA;
 
 const contacts = [
-  { Icon: PhoneIncoming, links: ["+234 803 4567 890"] },
-  { Icon: Mail, links: ["enoverlab@gmail.com", "programs@enoverlab.com"] },
+  { Icon: Telephone, links: ["+234 803 4567 890"] },
+  { Icon: Gmail, links: ["enoverlab@gmail.com", "programs@enoverlab.com"] },
 ];

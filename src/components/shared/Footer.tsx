@@ -2,6 +2,12 @@ import { socialLinks, footerLinks } from "@/data/footer_data";
 import Image from "next/image";
 import Link from "next/link";
 
+/**
+ * Footer component that renders the footer with links and copyright information.
+ *
+ * @returns {JSX.Element} The footer component.
+ */
+
 export default function Footer() {
   return (
     <footer className="font-plus-jakarta-sans bg-[#E0E9FE] px-4 pb-10 pt-20">

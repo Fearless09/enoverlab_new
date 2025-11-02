@@ -10,11 +10,11 @@ const Hero = () => {
           <h1 className="text-[60px] font-medium">
             Hire skilled and talented Product Managers
           </h1>
-          <p className="mt-6 mb-8 text-xl font-light">
+          <p className="mt-6 mb-8 max-w-[504px] text-xl/[35px] font-light">
             Help talented individuals gain access to life-changing tech
             education
           </p>
-          <UiLink variant="outline">
+          <UiLink variant="outline" href="/hire/talent">
             Hire a Talent{" "}
             <MoveRight className="transition-300 size-4.5 group-hover:translate-x-1.5" />
           </UiLink>

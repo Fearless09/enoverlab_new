@@ -6,6 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+/**
+ * Navbar component that renders the navigation links and the logo.
+ *
+ * @returns {JSX.Element} The navbar component.
+ */
+
 const Navbar = () => {
   const pathname = usePathname();
 

@@ -9,6 +9,23 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean;
 }
 
+/**
+ * A customizable button component that can be used for various use cases.
+ *
+ * It provides several variants for different use cases:
+ * - primary: a primary colored button with a hover effect
+ * - secondary: a secondary colored button with a shadow effect
+ * - outline: a button with a primary colored outline and a hover effect
+ * - ghost: a button with a grayish color and a hover effect
+ *
+ * It also provides several sizes for different use cases:
+ * - sm: a small button
+ * - md: a medium button
+ * - lg: a large button
+ *
+ * @param {ButtonProps} props - The props to be passed to the Button component
+ * @returns {JSX.Element} The Button component with the specified props
+ */
 export function Button({
   variant = "primary",
   size = "md",

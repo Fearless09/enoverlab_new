@@ -9,6 +9,23 @@ type UiLinkProps = FC<
   }
 >;
 
+/**
+ * A customizable link component that can be used for various use cases.
+ *
+ * It provides several variants for different use cases:
+ * - primary: a primary colored link with a hover effect
+ * - secondary: a secondary colored link with a shadow effect
+ * - outline: a link with a primary colored outline and a hover effect
+ * - ghost: a link with a grayish color and a hover effect
+ *
+ * It also provides several sizes for different use cases:
+ * - sm: a small link
+ * - md: a medium link
+ * - lg: a large link
+ *
+ * @param {UiLinkProps} props - The props to be passed to the Link component
+ * @returns {JSX.Element} The Link component with the specified props
+ */
 const UiLink: UiLinkProps = ({
   variant = "primary",
   size = "md",
