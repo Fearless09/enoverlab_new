@@ -46,11 +46,6 @@ const page = () => {
             </main>
 
             <main className="grid flex-1">
-              {/* step:{step}
-              <br />
-              completedStep {completedStep}
-              <br />
-              completed {String(completed)} */}
               <FAQ faqs={faqs[step - 1]} />
             </main>
           </section>

@@ -35,7 +35,7 @@ const Success: Prop = ({
           <Link
             href={socialLink.href}
             target="_blank"
-            className="transition-300 hover:opacity-85 active:translate-y-0.5 [&_svg]:size-7"
+            className="transition-300 hover:opacity-85 active:translate-y-0.5 [&_svg]:size-7.5"
             key={index}
           >
             {socialLink.icon}
