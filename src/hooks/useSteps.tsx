@@ -74,7 +74,10 @@ function reducer(state: State, action: Action): State {
       return {
         ...state,
         step: state.step + 1,
-        completedStep: state.completedStep + 1,
+        completedStep:
+          state.completedStep >= state.step
+            ? state.completedStep
+            : state.completedStep + 1,
       };
     }
 

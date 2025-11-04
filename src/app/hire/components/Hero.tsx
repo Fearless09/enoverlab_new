@@ -21,6 +21,12 @@ const Hero = () => {
         </main>
 
         <main className="relative max-w-[447px] flex-1">
+          <span className="bg-primary-400 absolute top-10 -right-[10%] z-1 flex items-center justify-center rounded-xs px-5 py-2 font-sans text-lg font-medium text-white">
+            Result driven
+          </span>
+          <span className="bg-primary-400 absolute bottom-15 -left-[10%] z-1 flex items-center justify-center rounded-xs px-5 py-2 font-sans text-lg font-medium text-white">
+            Professional
+          </span>
           <div className="relative aspect-[4.47/4.39] overflow-clip rounded-lg">
             <Image
               alt=""
