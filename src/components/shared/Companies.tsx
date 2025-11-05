@@ -15,6 +15,7 @@ const Companies = () => {
                 src={company}
                 fill
                 className="object-contain object-center"
+                sizes="100%"
               />
             </div>
           ))}

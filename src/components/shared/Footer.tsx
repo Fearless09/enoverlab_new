@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="font-plus-jakarta-sans bg-[#E0E9FE] px-4 pb-10 pt-20">
+    <footer className="font-plus-jakarta-sans bg-[#E0E9FE] px-4 pt-20 pb-10">
       <section className="wrapper">
         <section className="flex flex-wrap justify-between gap-x-10 gap-y-16">
           {/* Enoverlab Image and Social Links */}
@@ -20,7 +20,7 @@ export default function Footer() {
               width={225}
               height={0}
               alt="Enoverlab Logo"
-              className="w-[138px] object-contain sm:w-[225px]"
+              className="h-auto w-[138px] object-contain sm:w-[225px]"
             />
             <p className="text-secondary mt-4 text-base leading-[160%] font-light text-pretty">
               Building impactful product managers for today, tomorrow and the

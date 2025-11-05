@@ -24,6 +24,7 @@ const Discover = () => {
                   src={img}
                   fill
                   className="object-cover object-center"
+                  sizes="100%"
                 />
               </div>
 

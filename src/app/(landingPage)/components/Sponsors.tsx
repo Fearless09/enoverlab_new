@@ -12,6 +12,7 @@ const Sponsors = () => {
             src={"/hero_2.png"}
             fill
             className="object-cover object-center"
+            sizes="100%"
           />
         </main>
 
@@ -23,7 +24,7 @@ const Sponsors = () => {
             Changing the World
           </h1>
 
-          <p className="mt-5.5 text-xl mb-4 font-light">
+          <p className="mt-5.5 mb-4 text-xl font-light">
             Through your support, we're transforming potential into purpose.
             Every sponsorship helps aspiring tech talents gain the skills,
             confidence, and opportunities to create lasting impact in their

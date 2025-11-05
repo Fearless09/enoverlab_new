@@ -28,6 +28,7 @@ const Navbar = () => {
             fill
             priority
             className="origin-center object-contain"
+            sizes="100%"
           />
         </Link>
 
@@ -39,7 +40,9 @@ const Navbar = () => {
               className={cn(
                 "transition-300 hover:text-primary-400 text-base font-medium",
                 {
-                  "text-primary-400": pathname === item.href,
+                  "text-primary-400":
+                    pathname === item.href ||
+                    pathname.startsWith(item.href + "/"),
                 },
               )}
             >

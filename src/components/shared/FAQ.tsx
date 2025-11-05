@@ -8,7 +8,7 @@ export type Faq = { question: string; answer: string };
 
 const FAQ: FC<{ faqs: Faq[] }> = ({ faqs }) => {
   return (
-    <section className="bg-primary-400 relative px-6 pt-10 pb-20 text-white">
+    <section className="bg-primary-400 relative rounded-xs px-6 pt-10 pb-20 text-white">
       {/* <span className="bg-primary-400 absolute top-0 left-0 -z-1 h-full w-[50vw]" /> */}
       <h1 className="text-[40px] font-semibold">FAQs</h1>
 

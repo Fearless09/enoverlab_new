@@ -20,6 +20,7 @@ const Partners = () => {
                   src={img}
                   fill
                   className="object-cover object-center"
+                  sizes="100%"
                 />
               </div>
               <h1 className="mt-4 text-[24px]/[160%] font-semibold text-black">

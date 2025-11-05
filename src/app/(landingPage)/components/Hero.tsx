@@ -30,6 +30,7 @@ const Hero = () => {
             src={"/hero_1.png"}
             fill
             className="object-cover object-center"
+            sizes="100%"
           />
         </main>
       </section>

@@ -11,6 +11,7 @@ const Talent = () => {
             src={"/hire_2.png"}
             fill
             className="object-cover object-center"
+            sizes="100%"
           />
         </main>
 

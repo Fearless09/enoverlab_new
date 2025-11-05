@@ -1,6 +1,17 @@
 import { Button } from "@/components/ui/Button";
 import InputGroup from "@/components/ui/InputGroup";
 import { StepsProps } from "./Step1";
+import Checkbox from "@/components/ui/Checkbox";
+
+const hireType = [
+  "Intern",
+  "Full-time",
+  "Contract",
+  "On-Site",
+  "Part-time",
+  "Hybrid",
+  "Remote",
+];
 
 const Step2: StepsProps = ({ dispatcher }) => {
   return (
@@ -10,6 +21,16 @@ const Step2: StepsProps = ({ dispatcher }) => {
         id="position_title"
         placeholder="Enter the position title"
       />
+
+      <div>
+        <h6 className="text-lg text-black">Type of Hire</h6>
+        <div className="mt-3 flex flex-wrap items-center gap-x-7 gap-y-5">
+          {hireType.map((hire, index) => (
+            <Checkbox key={index} label={hire} id={`hire_type_${index}`} />
+          ))}
+        </div>
+      </div>
+
       <InputGroup
         label="Number of Talents Needed"
         id="no_talents"

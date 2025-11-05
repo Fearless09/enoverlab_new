@@ -33,6 +33,7 @@ const Hero = () => {
               src={"/hire_1.png"}
               fill
               className="object-cover object-center"
+              sizes="100%"
             />
           </div>
         </main>
