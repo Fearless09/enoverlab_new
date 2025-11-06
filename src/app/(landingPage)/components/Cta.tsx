@@ -13,7 +13,11 @@ const CTA = () => {
             Build a partnership tailored just for you. Speak to an advisor
           </p>
 
-          <UiLink>Speak to an Advisor</UiLink>
+          <UiLink 
+            href="../../training_programs/advisor"
+          >
+            Speak to an Advisor
+          </UiLink>
         </main>
 
         <main className="shrink-0 space-y-4">

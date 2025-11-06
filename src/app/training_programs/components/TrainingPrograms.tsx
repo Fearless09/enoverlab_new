@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import UiLink from "@/components/ui/UiLink";
 import Image from "next/image";
 
 const TrainingPrograms = () =>{
@@ -83,13 +84,13 @@ const TrainingPrograms = () =>{
               If you’re interested in joining or participating in any of our training programs, 
               please reach out to us through our Contact Us page.
             </p>
-            <Button 
+            <UiLink 
               variant="primary" 
-              size="md"
-              className="text-[20px] font-[300]"
+              href="/contact_us"
+              className="font-medium"
             >
-              Contact us
-            </Button>
+              Contact Us
+            </UiLink>
           </div>
         </section>
       </>
