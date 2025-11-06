@@ -15,7 +15,7 @@ const Advisors = () => {
             </p>
             <UiLink 
               variant="outline" 
-              href="/contact-us"
+              href="../../training_programs/advisor"
               size="md"
               className="bg-primary-400 flex flex-row justify-between gap-14 border-white text-white font-[300]"
             >
