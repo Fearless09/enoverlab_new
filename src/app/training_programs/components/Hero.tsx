@@ -16,8 +16,8 @@ const Hero = () => {
           </p>
           <UiLink 
             variant="outline" 
-            href="/contact-us"
-            className="font-[500]"
+            href="/contact_us"
+            className="font-medium"
           >
             Contact Us
           </UiLink>

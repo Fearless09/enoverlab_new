@@ -24,7 +24,7 @@ const Waitlist = () =>{
             </p>
             <UiLink 
               variant="outline" 
-              href="/contact-us"
+              href="/training_programs/waitlist"
               size="md"
               className="flex flex-row justify-between gap-14 border-white text-white font-[300]"
             >
