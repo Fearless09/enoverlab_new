@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/Button";
 import UiLink from "@/components/ui/UiLink";
 import Image from "next/image";
 
@@ -13,7 +12,7 @@ const TrainingPrograms = () =>{
               skills—designed to prepare participants for real-world success.
             </p>
           </div>
-          <div className="wrapper grid grid-cols-2 gap-4">
+          <div className="wrapper grid grid-cols-2 grid-rows-3 gap-4">
             <div className="bg-white flex  justify-between gap-3 rounded-[5px] pb-10">
               <Image
                 alt=""
