@@ -52,47 +52,42 @@ export default Navbar;
 
 const DesktopNavLink = ({ href, name, dropdown }: Nav) => {
   const pathname = usePathname();
-  const [open, setOpen] = useState<boolean>(false);
 
   if (dropdown) {
     return (
-      <div className="relative">
+      <div className="group relative flex h-10 items-center">
         <button
           className={cn(
-            "transition-300 flex cursor-pointer items-center justify-center gap-1",
+            "transition-300 hover:text-primary-300 flex cursor-pointer items-center justify-center gap-1",
             {
               "text-primary-400":
                 pathname === href || pathname.startsWith(href + "/"),
             },
           )}
-          onClick={() => setOpen(!open)}
         >
           {name}
           <ChevronDown
-            className={cn("transition-300 size-4.5", { "rotate-180": open })}
+            className={cn("transition-300 size-4.5 group-hover:rotate-180")}
           />
         </button>
 
-        {open && (
-          <ul className="border-primary-400/10 absolute top-[calc(100%+5px)] left-0 z-50 flex min-w-[120px] flex-col gap-3 rounded-xl border bg-white px-5 py-3">
-            {dropdown.map(({ name, href }, idx) => (
-              <Link
-                key={idx}
-                href={href}
-                onClick={() => setOpen(false)}
-                className={cn(
-                  "transition-300 hover:text-primary-400 text-base font-medium",
-                  {
-                    "text-primary-400":
-                      pathname === href || pathname.startsWith(href + "/"),
-                  },
-                )}
-              >
-                {name}
-              </Link>
-            ))}
-          </ul>
-        )}
+        <ul className="border-primary-400/10 absolute top-[calc(100%-2px)] left-0 z-50 hidden min-w-[150px] flex-col gap-3 rounded-lg border bg-white px-5 py-3 group-hover:flex">
+          {dropdown.map(({ name, href }, idx) => (
+            <Link
+              key={idx}
+              href={href}
+              className={cn(
+                "transition-300 hover:text-primary-300 text-base font-medium",
+                {
+                  "text-primary-400":
+                    pathname === href || pathname.startsWith(href + "/"),
+                },
+              )}
+            >
+              {name}
+            </Link>
+          ))}
+        </ul>
       </div>
     );
   }
@@ -101,7 +96,7 @@ const DesktopNavLink = ({ href, name, dropdown }: Nav) => {
     <Link
       href={href}
       className={cn(
-        "transition-300 hover:text-primary-400 text-base font-medium",
+        "transition-300 hover:text-primary-300 text-base font-medium",
         {
           "text-primary-400":
             pathname === href || pathname.startsWith(href + "/"),
