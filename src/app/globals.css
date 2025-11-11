@@ -20,6 +20,8 @@
   --font-mono: var(--font-geist-mono);
   --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
+  --text-max-60: clamp(25px, 5vw, 60px);
+
   --breakpoint-ipad: 992px;
 }
 
