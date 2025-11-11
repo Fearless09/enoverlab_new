@@ -8,7 +8,7 @@ export type StepsProps = FC<{ dispatcher: (action: Action) => void }>;
 
 const EducationalLevelType = [
   "Secondary",
-  "UNdergraduate",
+  "Undergraduate",
   "Graduate",
   "Others",
 ];
@@ -24,7 +24,7 @@ const Step1: StepsProps = ({ dispatcher }) => {
           placeholder="Enter your Full name"
         />
 
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-5">
           <InputGroup
             label="Phone Number"
             id="Phone Number"
@@ -45,7 +45,7 @@ const Step1: StepsProps = ({ dispatcher }) => {
           placeholder="Enter your Email Address"
         />
 
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-5">
           <InputGroup
             label="Date Of Birth"
             id="Date Of Birth"
@@ -61,12 +61,16 @@ const Step1: StepsProps = ({ dispatcher }) => {
         </div>
       </main>
 
-      <main className="space-y-7 rounded-3xl px-6 py-8">      
+      <main className="space-y-7 rounded-3xl px-6 py-8">
         <div>
-          <h6 className="text-lg text-black">Type of Hire</h6>
-          <div className="mt-3 flex flex-col justify-start items-left gap-x-7 gap-y-5">
+          <h6 className="text-base text-black md:text-lg">Type of Hire</h6>
+          <div className="items-left mt-3 flex flex-col justify-start gap-x-7 gap-y-5">
             {EducationalLevelType.map((educationalLevel, index) => (
-              <Checkbox key={index} label={educationalLevel} id={`hire_type_${index}`} />
+              <Checkbox
+                key={index}
+                label={educationalLevel}
+                id={`hire_type_${index}`}
+              />
             ))}
           </div>
         </div>

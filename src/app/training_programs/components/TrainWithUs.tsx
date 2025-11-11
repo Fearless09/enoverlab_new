@@ -1,66 +1,54 @@
 import Image from "next/image";
-import React from "react"
 
 const TrainWithUs = () => {
-  return(
-    <>
-      <section className="wrapper relative mt-15 md:mt-25 ">
-        <div className="flex flex-col justify-center items-center font-[18px] gap-[15px] text-primary-400">
-          <h1 className="text-[40px]">Why Train with Us</h1>
-          <p className="w-[530px] text-center font-[400]">We don’t just teach product management—we shape future-ready product leaders.</p>
-        </div>
-        <div className="flex flex-row justify-between gap-[8px] text-center mb-10">
-          <div className="">
-            <div className="py-[30px] px-[10px] bg-[#E0E9FE] rounded">
-              <div className="flex flex-col justify-center items-center gap-[13px]">
-                <Image
-                  alt=""
-                  src={"/training-program/Vector.png"}
-                  width={40}
-                  height={40}
-                  className="object-cover object-center m-0"
-                />
-                <p className="w-[410px] font-semibold text-[#323232] text-[23.38px]">Industry Relevant curriculum</p>
-                <p className="w-[352px] text-[#3D3D3D] text-[17.28px]/160%">You will learn practical skills, tools, and frameworks that are used in the real world—not just theory.</p>
-              </div>
-            </div>
+  return (
+    <section className="wrapper relative mt-15 md:mt-25">
+      <header className="text-primary-400 mx-auto w-full max-w-[550px] text-center text-pretty">
+        <h1 className="text-max-40 font-medium">Why Train with Us</h1>
+        <p className="text-max-20/[160%] mt-3.5 font-light">
+          We don&apos;t just teach product management—we shape future-ready
+          product leaders.
+        </p>
+      </header>
+
+      <main className="mt-16 grid grid-cols-1 gap-5 text-center text-pretty sm:grid-cols-2 md:grid-cols-3">
+        {datas.map((data, index) => (
+          <div key={index} className="rounded-md bg-[#E0E9FE] px-4 py-6">
+            <span className="relative inline-block size-10">
+              <Image alt={data.title} src={data.img} fill />
+            </span>
+            <h5 className="text-secondary text-max-24 font-semibold capitalize">
+              {data.title}
+            </h5>
+            <p className="text-base/[160%] text-[#3D3D3D] sm:text-lg/[160%]">
+              {data.subtitle}
+            </p>
           </div>
-          <div className="">
-            <div className="pt-[30px] pb-[8px] px-[33px] bg-[#E0E9FE] rounded">
-              <div className="flex flex-col justify-center items-center gap-[13px]">
-                <Image
-                  alt=""
-                  src={"/training-program/_7-Result-test.png"}
-                  width={30}
-                  height={30}
-                  className="object-cover object-center m-0"
-                />
-                <h2 className="w-[352px] font-semibold text-[#323232] text-[25.88px]">Career-Driven Outcomes</h2>
-                <p className="w-[352px] text-[#3D3D3D] text-[17.28px]/160%">We focus on what matters: your career. we offer 1:1 career coaching, resume support, 
-                  mock interviews, and direct access to hiring networks.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <div className="py-[30px] px-[15px] bg-[#E0E9FE] rounded">
-              <div className="flex flex-col justify-center items-center gap-[13px]">
-                <Image
-                  alt=""
-                  src={"/training-program/Layer_1.png"}
-                  width={40}
-                  height={40}
-                  className="object-cover object-center m-0"
-                />
-                <h2 className="font-semibold text-[#323232] text-[25.88px]">Certified</h2>
-                <p className="w-[352px] text-[#3D3D3D] text-[17.28px]/160%">Join a thriving community of alumni, mentors, and hiring partners across industries.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
+        ))}
+      </main>
+    </section>
+  );
+};
 
 export default TrainWithUs;
+
+const datas = [
+  {
+    img: "/training-program/Vector.png",
+    title: "Industry Relevant curriculum",
+    subtitle:
+      "You will learn practical skills, tools, and frameworks that are used in the real world—not just theory.",
+  },
+  {
+    img: "/training-program/_7-Result-test.png",
+    title: "Career-Driven Outcomes",
+    subtitle:
+      "We focus on what matters: your career. we offer 1:1 career coaching, resume support, mock interviews, and direct access to hiring networks.",
+  },
+  {
+    img: "/training-program/Layer_1.png",
+    title: "Certified",
+    subtitle:
+      "Join a thriving community of alumni, mentors, and hiring partners across industries.",
+  },
+];

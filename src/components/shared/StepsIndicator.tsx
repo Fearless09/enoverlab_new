@@ -29,7 +29,7 @@ const StepsIndicator: Props = ({
   stepsTitle,
 }) => {
   return (
-    <section className="flex items-center justify-center gap-6">
+    <section className="flex items-start justify-center gap-6">
       {stepsTitle.map((title, index) => (
         <React.Fragment key={index}>
           <div
@@ -51,7 +51,7 @@ const StepsIndicator: Props = ({
           >
             <span
               className={cn(
-                "transition-300 mx-auto flex size-12 items-center justify-center rounded-full border text-xl",
+                "transition-300 mx-auto flex size-10 items-center justify-center rounded-full border text-lg md:size-12 md:text-xl",
                 {
                   "bg-primary-400 text-white": index + 1 <= completedStep,
                   "text-primary-400 bg-transparent": index + 1 === step,
@@ -60,7 +60,7 @@ const StepsIndicator: Props = ({
             >
               {index + 1}
             </span>
-            <h1 className="transition-300 mx-auto mt-3 max-w-[125px] text-base capitalize">
+            <h1 className="transition-300 mx-auto mt-3 max-w-[125px] text-sm capitalize md:text-base">
               {title}
             </h1>
           </div>

@@ -25,7 +25,7 @@ const Checkbox: Props = ({ label, className, type = "checkbox", ...props }) => {
       >
         <CheckIcon className="size-3.5 stroke-5 text-white" />
       </span>
-      <label htmlFor={props.id} className="text-base text-black">
+      <label htmlFor={props.id} className="text-sm text-black md:text-base">
         {label}
       </label>
     </div>
