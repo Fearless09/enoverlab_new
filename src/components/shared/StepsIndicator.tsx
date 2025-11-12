@@ -29,7 +29,7 @@ const StepsIndicator: Props = ({
   stepsTitle,
 }) => {
   return (
-    <section className="flex items-start justify-center gap-6">
+    <section className="flex items-center justify-center gap-6">
       {stepsTitle.map((title, index) => (
         <React.Fragment key={index}>
           <div
