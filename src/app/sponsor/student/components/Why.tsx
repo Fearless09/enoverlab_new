@@ -4,9 +4,15 @@ import Image from "next/image";
 const Why = () => {
   return (
     <section className="mt-14 bg-[#E0E9FE] py-20">
-      <section className="wrapper flex max-w-5xl items-center justify-center gap-10">
-        <main className="relative aspect-[5.71/5.69] max-w-[570px] flex-1 overflow-clip rounded-xs">
-          <Image alt="" src={"/sponsor_3.png"} fill sizes="100%" />
+      <section className="wrapper flex max-w-5xl flex-col-reverse items-center justify-center gap-x-5 gap-y-12 md:flex-row">
+        <main className="relative aspect-[5.71/5.69] w-full max-w-[570px] flex-1 overflow-clip rounded-xs">
+          <Image
+            alt=""
+            src={"/sponsor_3.png"}
+            fill
+            sizes="100%"
+            className="object-cover object-center"
+          />
         </main>
 
         <main className="max-w-[400px] flex-1 text-pretty">
@@ -22,7 +28,7 @@ const Why = () => {
                   <Icon className="size-9" />
                 </span>
 
-                <span className="text-xl">
+                <span className="text-max-20">
                   <h1 className="font-semibold">{title}</h1>
                   <p className="mt-2 font-light">{description}</p>
                 </span>
