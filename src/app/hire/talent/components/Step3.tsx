@@ -17,8 +17,8 @@ const Step3: StepsProps = ({ dispatcher }) => {
       <InputGroup label="If Others please specify" id="expertise_others" />
 
       <div>
-        <h6 className="text-lg text-black">Experience Level</h6>
-        <div className="mt-3 flex flex-wrap items-center gap-x-7 gap-y-5">
+        <h6 className="text-base text-black md:text-lg">Experience Level</h6>
+        <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-5">
           {levels.map((level, index) => (
             <Checkbox key={index} label={level} id={`level_${index}`} />
           ))}

@@ -16,7 +16,7 @@ const Step1: StepsProps = ({ dispatcher }) => {
           placeholder="Enter your organization name"
         />
 
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-5">
           <InputGroup
             label="Industry Field"
             id="industry_field"
@@ -46,7 +46,7 @@ const Step1: StepsProps = ({ dispatcher }) => {
           placeholder="Enter your full name"
         />
 
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-5">
           <InputGroup
             label="Position/Role"
             id="position_role"

@@ -20,7 +20,26 @@
   --font-mono: var(--font-geist-mono);
   --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
+  --text-max-60: clamp(48px, 3vw + 1rem, 60px);
+  --text-max-45: clamp(36px, 2vw + 1.25rem, 45px);
+  --text-max-40: clamp(32px, 2vw + 1rem, 40px);
+  --text-max-36: clamp(28px, 1.5vw + 1rem, 36px);
+  --text-max-28: clamp(24px, 1vw + 1rem, 28px);
+  --text-max-24: clamp(20px, 1vw + 0.75rem, 24px);
+  --text-max-20: clamp(16px, 1vw + 0.5rem, 20px);
+
   --breakpoint-ipad: 992px;
+
+  --animate-marquee: 20s linear infinite marquee;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @utility wrapper {
@@ -47,4 +66,5 @@ body {
   background: #ffffff;
   color: #323232;
   font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.6;
 }

@@ -1,37 +1,34 @@
 import UiLink from "@/components/ui/UiLink";
-import { MoveRight } from "lucide-react";
 import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="relative mt-15 md:mt-25">
-      <section className="wrapper flex items-start justify-between gap-x-10 gap-y-16">
-        <main className="text-primary-400 max-w-[689px] flex-1 text-pretty gap-2">
-          <h1 className="text-[60px] font-medium">
+      <section className="wrapper flex flex-col items-center justify-between gap-x-5 gap-y-16 md:flex-row">
+        <main className="text-primary-400 max-w-[600px] flex-1 text-center text-pretty md:text-left">
+          <h1 className="text-max-60/[1.3] font-medium">
             Learn from World Class Experts Anytime and Anywhere
           </h1>
-          <p className="mt-6 mb-8 max-w-[504px] text-[20px] font-Plus Jakarta Sans">
-            Learn from world-class experts : anytime, anywhere. Unlock expert-led lessons
-            on your schedule, from any device.
+          <p className="font-Plus Jakarta Sans text-max-20 mx-auto mt-6 mb-8 max-w-[500px] md:mx-0">
+            Learn from world-class experts: anytime, anywhere. Unlock expert-led
+            lessons on your schedule, from any device.
           </p>
-          <UiLink 
-            variant="outline" 
+          <UiLink
+            variant="outline"
             href="/contact_us"
-            className="font-medium"
+            className="px-10 font-medium"
           >
             Contact Us
           </UiLink>
         </main>
 
-        <main className="relative max-w-[447px] flex-1 m-0">
-          <div className="relative aspect-[4.47/4.39] overflow-clip rounded-lg m-0">
-            <Image
-              alt=""
-              src={"/training-program/hero1.png"}
-              fill
-              className="object-cover object-center m-0 rounded "
-            />
-          </div>
+        <main className="relative aspect-[5.32/3.95] w-full max-w-[540px] flex-1 overflow-clip rounded-lg">
+          <Image
+            alt=""
+            src={"/training-program/hero1.png"}
+            fill
+            className="object-cover object-center"
+          />
         </main>
       </section>
     </section>

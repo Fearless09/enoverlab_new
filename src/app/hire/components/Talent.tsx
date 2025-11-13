@@ -4,8 +4,8 @@ import Image from "next/image";
 const Talent = () => {
   return (
     <section className="relative bg-[#E0E9FE] py-20">
-      <section className="wrapper flex items-center justify-between gap-10">
-        <main className="relative aspect-[5.69/5] max-w-[569px] flex-1 overflow-clip rounded-md">
+      <section className="wrapper ipad:flex-row flex flex-col-reverse items-center justify-between gap-x-5 gap-y-12">
+        <main className="relative aspect-[5.69/5] w-full max-w-[569px] flex-1 overflow-clip rounded-md">
           <Image
             alt=""
             src={"/hire_2.png"}
@@ -16,7 +16,7 @@ const Talent = () => {
         </main>
 
         <main className="text-pretty">
-          <h1 className="text-primary-400 text-[40px]/[60px] font-semibold">
+          <h1 className="text-primary-400 text-max-40/[60px] font-semibold">
             Hire our talent
           </h1>
 
@@ -27,9 +27,9 @@ const Talent = () => {
                   <Icon className="text-primary-400 size-9" />
                 </span>
 
-                <span className="text-xl">
+                <span className="text-max-20">
                   <h1 className="text-primary-400 font-semibold">{title}</h1>
-                  <p className="mt-2 font-light">{description}</p>
+                  <p className="mt-0.5 font-light">{description}</p>
                 </span>
               </li>
             ))}

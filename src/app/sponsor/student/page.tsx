@@ -10,7 +10,7 @@ const SponsorStudent = () => {
       <Vision />
       <Why />
 
-      <h1 className="text-primary-400 px-5 text-center text-[45px] mt-18 font-medium">
+      <h1 className="text-primary-400 text-max-45  mt-18 px-5 text-center font-medium">
         Our Sponsors
       </h1>
       <Companies />

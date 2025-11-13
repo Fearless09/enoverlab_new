@@ -8,11 +8,7 @@ import Step3 from "./components/Step3";
 import FAQ, { Faq } from "@/components/shared/FAQ";
 import Success from "@/components/shared/Success";
 
-const stepsTitle = [
-  "Personal Information",
-  "Motivation",
-  "Updates & Consent",
-];
+const stepsTitle = ["Personal Information", "Motivation", "Updates & Consent"];
 
 const page = () => {
   const { completed, completedStep, step, stepDispater } = useSteps({
@@ -32,14 +28,14 @@ const page = () => {
             dispatcher={stepDispater}
           />
 
-          <section className="mt-19 flex justify-between gap-5">
-            <main className="w-full max-w-[720px]">
+          <section className="mt-19 flex flex-col justify-between gap-x-5 gap-y-12 md:flex-row">
+            <main className="flex-1 max-w-[720px]">
               {step === 1 && <Step1 dispatcher={stepDispater} />}
               {step === 2 && <Step2 dispatcher={stepDispater} />}
               {step === 3 && <Step3 dispatcher={stepDispater} />}
             </main>
 
-            <main className="grid flex-1">
+            <main className="grid max-w-[595px] flex-1">
               <FAQ faqs={faqs[step - 1]} />
             </main>
           </section>
@@ -57,73 +53,88 @@ const faqs: Faq[][] = [
   [
     {
       question: "Why do you need my organization’s information?",
-      answer: "We collect basic details to understand your company’s goals, structure, and culture — so we can match you with the best-fit talent.",
+      answer:
+        "We collect basic details to understand your company’s goals, structure, and culture — so we can match you with the best-fit talent.",
     },
     {
       question:
         "Can individuals or startups without a registered company hire a talent?",
-      answer: "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn’t required to access talent.",
+      answer:
+        "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn’t required to access talent.",
     },
     {
       question: "Will my company details remain confidential?",
-      answer: "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
+      answer:
+        "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
     },
     {
       question: "What if my organization doesn’t have a website yet?",
-      answer: "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
+      answer:
+        "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
     },
     {
       question:
         "Can I update my organization’s contact person after submitting the form?",
-      answer: "Yes — simply contact our support team, and we’ll update your records right away.",
+      answer:
+        "Yes — simply contact our support team, and we’ll update your records right away.",
     },
   ],
   [
     {
       question: "Why do you need my organization’s information?",
-      answer: "We collect basic details to understand your company’s goals, structure, and culture — so we can match you with the best-fit talent.",
+      answer:
+        "We collect basic details to understand your company’s goals, structure, and culture — so we can match you with the best-fit talent.",
     },
     {
       question:
         "Can individuals or startups without a registered company hire a talent?",
-      answer: "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn’t required to access talent.",
+      answer:
+        "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn’t required to access talent.",
     },
     {
       question: "Will my company details remain confidential?",
-      answer: "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
+      answer:
+        "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
     },
     {
       question: "What if my organization doesn’t have a website yet?",
-      answer: "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
+      answer:
+        "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
     },
     {
       question:
         "Can I update my organization’s contact person after submitting the form?",
-      answer: "Yes — simply contact our support team, and we’ll update your records right away.",
+      answer:
+        "Yes — simply contact our support team, and we’ll update your records right away.",
     },
   ],
   [
     {
       question: "Why do you need my organization’s information?",
-      answer: "We collect basic details to understand your company’s goals, structure, and culture — so we can match you with the best-fit talent.",
+      answer:
+        "We collect basic details to understand your company’s goals, structure, and culture — so we can match you with the best-fit talent.",
     },
     {
       question:
         "Can individuals or startups without a registered company hire a talent?",
-      answer: "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn’t required to access talent.",
+      answer:
+        "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn’t required to access talent.",
     },
     {
       question: "Will my company details remain confidential?",
-      answer: "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
+      answer:
+        "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
     },
     {
       question: "What if my organization doesn’t have a website yet?",
-      answer: "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
+      answer:
+        "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
     },
     {
       question:
         "Can I update my organization’s contact person after submitting the form?",
-      answer: "Yes — simply contact our support team, and we’ll update your records right away.",
+      answer:
+        "Yes — simply contact our support team, and we’ll update your records right away.",
     },
   ],
 ];

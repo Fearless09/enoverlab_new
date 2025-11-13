@@ -2,20 +2,20 @@ const Values = () => {
   return (
     <section className="relative pt-25 pb-20">
       <section className="wrapper text-pretty">
-        <h1 className="text-primary-400 text-center text-[40px] font-bold">
+        <h1 className="text-primary-400 text-max-40 text-center font-bold">
           Our Values
         </h1>
 
-        <main className="mt-12 grid grid-cols-3 gap-5">
+        <main className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
           {values.map((value, index) => (
             <div
               className="rounded-xl border border-[#E0E9FE]/50 p-8 pt-10 shadow-[0_4px_6px_0_#E0E9FE]"
               key={index}
             >
-              <h2 className="text-[28px]/[35px] font-bold text-black">
+              <h2 className="text-max-28/[35px] font-bold text-black">
                 {value.title}
               </h2>
-              <p className="mt-6 text-xl/[35px] font-light text-[#545454]">
+              <p className="mt-6 text-max-20/[35px] font-light text-[#545454]">
                 {value.description}
               </p>
             </div>

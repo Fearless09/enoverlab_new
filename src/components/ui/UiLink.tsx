@@ -52,9 +52,9 @@ const UiLink: UiLinkProps = ({
         },
         // Sizes
         {
-          "min-h-9 px-3 text-sm": size === "sm",
-          "min-h-12 px-6 text-base": size === "md",
-          "min-h-14 px-8 text-lg": size === "lg",
+          "min-h-9 px-3 text-xs sm:text-sm": size === "sm",
+          "min-h-12 px-6 text-sm md:text-base": size === "md",
+          "min-h-14 px-8 text-base md:text-lg": size === "lg",
         },
         className,
       )}

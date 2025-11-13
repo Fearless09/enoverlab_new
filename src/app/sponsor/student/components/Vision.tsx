@@ -3,16 +3,16 @@ import { cn } from "@/utilities/utils";
 const Vision = () => {
   return (
     <section className="mt-24">
-      <section className="wrapper grid grid-cols-2 gap-8 text-pretty">
+      <section className="wrapper grid grid-cols-1 gap-8 text-pretty sm:grid-cols-2">
         {values.map((value, index) => (
           <div key={index}>
-            <h1 className="text-primary-400 text-[40px] font-semibold">
+            <h1 className="text-primary-400 text-max-40 font-semibold">
               {value.title}
             </h1>
 
             <p
               className={cn(
-                "mt-8 rounded p-6 text-lg/[35px] text-[#545454] shadow-[0_1px_5px_1px_#E0E9FE]",
+                "text-max-20! mt-4 rounded p-6 text-[#545454] shadow-[0_1px_5px_1px_#E0E9FE] md:mt-8",
                 {
                   "bg-[#E0E9FE]": index === 1,
                 },

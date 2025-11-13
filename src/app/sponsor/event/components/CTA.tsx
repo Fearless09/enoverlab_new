@@ -7,8 +7,8 @@ const CTA = () => {
   return (
     <section className="mt-24 mb-20">
       <section className="wrapper text-primary-400 text-center text-pretty">
-        <h1 className="text-[40px] font-medium">Sponsor our Tech Event</h1>
-        <p className="mx-auto mt-3 max-w-[800px] font-light text-xl/[170%]">
+        <h1 className="text-max-40 font-medium">Sponsor our Tech Event</h1>
+        <p className="text-max-20/[170%] mx-auto mt-3 max-w-[800px] font-light">
           We're currently preparing an exciting lineup of events to launch soon!
           <br />
           There are no active events at the moment, but once our programs

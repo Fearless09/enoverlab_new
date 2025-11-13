@@ -23,8 +23,8 @@ const Step2: StepsProps = ({ dispatcher }) => {
       />
 
       <div>
-        <h6 className="text-lg text-black">Type of Hire</h6>
-        <div className="mt-3 flex flex-wrap items-center gap-x-7 gap-y-5">
+        <h6 className="text-base text-black md:text-lg">Type of Hire</h6>
+        <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-5">
           {hireType.map((hire, index) => (
             <Checkbox key={index} label={hire} id={`hire_type_${index}`} />
           ))}

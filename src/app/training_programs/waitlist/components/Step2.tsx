@@ -12,12 +12,20 @@ const AppliedBefore = [
 const Step2: StepsProps = ({ dispatcher }) => {
   return (
     <main className="w-full max-w-[600px] space-y-7">
-      <TextAreaGroup label="Why are you interested in joining this program?" id="Interested?" />
-      <TextAreaGroup label="What impact do you hope this training will have on your career or future?" id="career impact" />
+      <TextAreaGroup
+        label="Why are you interested in joining this program?"
+        id="Interested?"
+      />
+      <TextAreaGroup
+        label="What impact do you hope this training will have on your career or future?"
+        id="career_impact"
+      />
 
       <div>
-        <h6 className="text-lg text-black">Have you applied for Enoverlab sponsorship before?</h6>
-        <div className="mt-3 flex flex-col justify-start items-left gap-x-7 gap-y-5">
+        <h6 className="text-base text-black md:text-lg">
+          Have you applied for Enoverlab sponsorship before?
+        </h6>
+        <div className="items-left mt-3 flex flex-col justify-start gap-x-7 gap-y-5">
           {AppliedBefore.map((Applied, index) => (
             <Checkbox key={index} label={Applied} id={`hire_type_${index}`} />
           ))}

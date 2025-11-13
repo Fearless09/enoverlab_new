@@ -20,13 +20,10 @@ const Success: Prop = ({
         <DotLottieReact src="/success.lottie" autoplay />
       </div>
 
-      <h1 className="mt-5 text-[45px] font-medium">{title}</h1>
-      <p className="mt-8 mb-20 text-xl">{description}</p>
-      <UiLink
-        href={"/"}
-        variant="ghost"
-        className="text-primary-400 text-xl font-bold"
-      >
+      <h1 className="text-max-45 mt-5 font-medium">{title}</h1>
+      <p className="text-max-20/[160%] mt-8 mb-20">{description}</p>
+
+      <UiLink href={"/"} variant="ghost" className="text-primary-400 font-bold">
         Back to homepage
       </UiLink>
 

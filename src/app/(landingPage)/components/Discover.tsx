@@ -5,17 +5,17 @@ const Discover = () => {
     <section id="discover" className="relative mt-35 bg-[#E0E9FE] py-22">
       <section className="wrapper text-pretty">
         <header className="text-primary-400 text-center">
-          <h1 className="text-[40px] font-medium">Discover Our Focus Areas</h1>
-          <p className="mx-auto mt-3.5 max-w-[400px] text-xl font-light">
+          <h1 className="text-max-40 font-medium">Discover Our Focus Areas</h1>
+          <p className="text-max-20 mx-auto mt-3.5 max-w-[400px] font-light">
             Explore how Enoverlab is driving innovation and impact through tech
             education
           </p>
         </header>
 
-        <main className="text-secondary mt-15 grid grid-cols-4 gap-6">
+        <main className="text-secondary mt-15 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {discovers.map(({ img, subtitle, title }, index) => (
             <div
-              className="transition-300 min-h-[370px] rounded-xl bg-white p-2.5 hover:shadow-md"
+              className="transition-300 rounded-xl bg-white p-2.5 pb-8 hover:shadow-md"
               key={index}
             >
               <div className="relative aspect-[2.74/1.47] overflow-clip rounded-lg">
@@ -28,7 +28,7 @@ const Discover = () => {
                 />
               </div>
 
-              <h1 className="mt-8 text-[24px] font-medium">{title}</h1>
+              <h1 className="text-max-24 mt-8 font-medium">{title}</h1>
               <p className="mt-3 text-base/[160%]">{subtitle}</p>
             </div>
           ))}

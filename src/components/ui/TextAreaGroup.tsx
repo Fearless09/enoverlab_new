@@ -6,10 +6,15 @@ type Props = FC<ComponentProps<"textarea"> & { label?: string }>;
 const TextAreaGroup: Props = ({ label, className, ...props }) => {
   return (
     <div className="flex flex-col gap-1">
-      <label htmlFor={props.id} className="text-lg font-medium text-black">
-        {label}
-        {props.required ? <span className="text-[#B73A3A]">*</span> : ""}
-      </label>
+      {!!label && (
+        <label
+          htmlFor={props.id}
+          className="text-base font-medium text-black md:text-lg"
+        >
+          {label}
+          {props.required ? <span className="text-[#B73A3A]">*</span> : ""}
+        </label>
+      )}
 
       <textarea
         className={cn(

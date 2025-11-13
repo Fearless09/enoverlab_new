@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <section id="layout" className="flex min-h-dvh flex-col">
           <Navbar />
-          <section className="flex-1">{children}</section>
+          <section className="flex-1 overflow-clip">{children}</section>
           <Footer />
         </section>
       </body>

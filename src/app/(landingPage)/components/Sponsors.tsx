@@ -5,8 +5,8 @@ import Image from "next/image";
 const Sponsors = () => {
   return (
     <section className="bg-primary-400 relative py-20.5 text-white">
-      <section className="wrapper flex items-center justify-between gap-10">
-        <main className="relative aspect-[5.98/4.81] max-w-[598px] flex-1 overflow-clip rounded-[10px]">
+      <section className="wrapper flex flex-col-reverse items-center justify-between gap-10 md:flex-row">
+        <main className="relative aspect-[5.98/4.81] w-full max-w-[598px] flex-1 overflow-clip rounded-[10px]">
           <Image
             alt=""
             src={"/hero_2.png"}
@@ -16,15 +16,15 @@ const Sponsors = () => {
           />
         </main>
 
-        <main className="max-w-[525px] flex-1 text-pretty">
-          <h6 className="text-xl font-medium">SPONSORS</h6>
-          <h1 className="mt-6 text-[36px] font-bold">
+        <main className="max-w-[525px] flex-1 text-center text-pretty md:text-left">
+          <h6 className="text-max-20 font-medium">SPONSORS</h6>
+          <h1 className="text-max-36 mt-6 font-bold">
             Changing Lives,
             <br />
             Changing the World
           </h1>
 
-          <p className="mt-5.5 mb-4 text-xl font-light">
+          <p className="text-max-20 mt-5.5 mb-4 font-light">
             Through your support, we're transforming potential into purpose.
             Every sponsorship helps aspiring tech talents gain the skills,
             confidence, and opportunities to create lasting impact in their

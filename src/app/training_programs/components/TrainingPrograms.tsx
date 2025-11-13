@@ -1,98 +1,78 @@
 import UiLink from "@/components/ui/UiLink";
 import Image from "next/image";
 
-const TrainingPrograms = () =>{
-  return(
-      <>
-        <section className="mt-15 md:mt-25 bg-[#E0E9FE]">
-          <div className="text-primary-400 text-center py-10">
-            <h1 className="text-[32px] pb-3">Training Programs</h1>
-            <p className="w-[600px] text-center mx-auto">
-              Practical, hands-on learning in product management and digital 
-              skills—designed to prepare participants for real-world success.
-            </p>
-          </div>
-          <div className="wrapper grid grid-cols-2 grid-rows-3 gap-4">
-            <div className="bg-white flex  justify-between gap-3 rounded-[5px] pb-10">
-              <Image
-                alt=""
-                src={"/training-program/training1.png"}
-                width={142.07}
-                height={143.99}
-                className="object-cover m-4"
-              />
-              <div className="flex flex-col justify-between my-4">
-                <h2 className="text-[25.88px] text-[#3D3D3D]">Personal Training</h2>
-                <p className="text-[17.28px] text-[#3D3D3D]">
-                  Are you an aspiring product manager, a tech professional transitioning into product,
-                   or a PM aiming to level up—our personalized training is built around you.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white flex  justify-between gap-3 rounded-[5px] pb-10">
-              <Image
-                alt=""
-                src={"/training-program/training2.png"}
-                width={142.07}
-                height={143.99}
-                className="object-cover m-4"
-              />
-              <div className="flex flex-col justify-between my-4">
-                <h2 className="text-[25.88px] text-[#3D3D3D]">Staff Training</h2>
-                <p className="text-[17.28px] text-[#3D3D3D]">
-                  We specialize in up-skilling teams through targeted, real-world Product Management 
-                  training—designed to align with your business goals and product vision.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white flex  justify-between gap-3 rounded-[5px] pb-10">
-              <Image
-                alt=""
-                src={"/training-program/training3.png"}
-                width={142.07}
-                height={143.99}
-                className="object-cover m-4"
-              />
-              <div className="flex flex-col justify-between my-4">
-                <h2 className="text-[25.88px] text-[#3D3D3D]">StartUp Training</h2>
-                <p className="text-[17.28px] text-[#3D3D3D]">
-                  Empowering Nigerian businesses with cutting edge, strategic frameworks 
-                  that drive measurable success in today’s competitive market
-                </p>
-              </div>
-            </div>
-            <div className="bg-white flex  justify-between gap-3 rounded-[5px] pb-10">
-              <Image
-                alt=""
-                src={"/training-program/training4.png"}
-                width={142.07}
-                height={143.99}
-                className="object-cover m-4"
-              />
-              <div className="flex flex-col justify-between my-4">
-                <h2 className="text-[25.88px] text-[#3D3D3D]">Bussiness Growth Training</h2>
-                <p className="text-[17.28px] text-[#3D3D3D]">
-                  Battle-Tested Strategies: Developed from decades 
-                  of experience with leading Medium Scale Businesses
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-[64%] mx-auto pt-8 pb-12 text-center flex flex-col justify-center items-center gap-7">
-            <p className="text-[20px] text-primary-400">
-              If you’re interested in joining or participating in any of our training programs, 
-              please reach out to us through our Contact Us page.
-            </p>
-            <UiLink 
-              variant="primary" 
-              href="/contact_us"
-              className="font-medium"
+const TrainingPrograms = () => {
+  return (
+    <>
+      <section className="mt-15 bg-[#E0E9FE] py-13 md:mt-25">
+        <header className="text-primary-400 mx-auto max-w-[600px] text-center text-pretty">
+          <h1 className="text-max-36">Training Programs</h1>
+          <p className="text-max-20 mt-3.5">
+            Practical, hands-on learning in product management and digital
+            skills—designed to prepare participants for real-world success.
+          </p>
+        </header>
+
+        <main className="wrapper mt-10 grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+          {programs.map((program, index) => (
+            <div
+              key={index}
+              className="flex justify-between gap-6 rounded-md bg-white px-4 pt-6 pb-10"
             >
-              Contact Us
-            </UiLink>
-          </div>
-        </section>
-      </>
-)}
+              <div className="relative aspect-square w-full max-w-[140px] rounded-md">
+                <Image alt={program.title} src={program.img} fill />
+              </div>
+
+              <div>
+                <h2 className="text-secondary text-max-24">{program.title}</h2>
+                <p className="mt-3.5 text-base text-[#3D3D3D]">
+                  {program.subtitle}
+                </p>
+              </div>
+            </div>
+          ))}
+        </main>
+
+        <main className="mx-auto mt-9 max-w-[620px] px-4 text-center text-pretty">
+          <p className="text-primary-400 text-max-20 mb-7 font-light">
+            If you&apos;re interested in joining or participating in any of our
+            training programs, please reach out to us through our Contact Us
+            page.
+          </p>
+          <UiLink variant="primary" href="/contact_us" className="font-medium">
+            Contact Us
+          </UiLink>
+        </main>
+      </section>
+    </>
+  );
+};
 
 export default TrainingPrograms;
+
+const programs = [
+  {
+    img: "/training-program/training1.png",
+    title: "Personal Training",
+    subtitle:
+      "Are you an aspiring product manager, a tech professional transitioning into product, or a PM aiming to level up—our personalized training is built around you.",
+  },
+  {
+    img: "/training-program/training2.png",
+    title: "Staff Training",
+    subtitle:
+      "We specialize in up-skilling teams through targeted, real-world Product Management training—designed to align with your business goals and product vision.",
+  },
+  {
+    img: "/training-program/training3.png",
+    title: "StartUp Training",
+    subtitle:
+      "Empowering Nigerian businesses with cutting edge, strategic frameworks that drive measurable success in today's competitive market",
+  },
+  {
+    img: "/training-program/training4.png",
+    title: "Bussiness Growth Training",
+    subtitle:
+      "Battle-Tested Strategies: Developed from decades of experience with leading Medium Scale Businesses",
+  },
+];

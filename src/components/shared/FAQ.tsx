@@ -8,9 +8,9 @@ export type Faq = { question: string; answer: string };
 
 const FAQ: FC<{ faqs: Faq[] }> = ({ faqs }) => {
   return (
-    <section className="bg-primary-400 relative rounded-xs px-6 pt-10 pb-20 text-white">
+    <section className="bg-primary-400 relative rounded-md px-6 pt-10 pb-20 text-white">
       {/* <span className="bg-primary-400 absolute top-0 left-0 -z-1 h-full w-[50vw]" /> */}
-      <h1 className="text-[40px] font-semibold">FAQs</h1>
+      <h1 className="text-max-40 font-semibold">FAQs</h1>
 
       <ul className="mt-5 space-y-8">
         {faqs.map((faq, index) => (
@@ -32,7 +32,7 @@ const FaqItem: FC<Faq> = ({ answer, question }) => {
         className="flex w-full cursor-pointer gap-5 text-left"
         onClick={() => setOpen(!open)}
       >
-        <span className="flex-1 text-xl">{question}</span>
+        <span className="flex-1 text-max-20">{question}</span>
         <ChevronDown
           className={cn("transition-300 mt-1", { "rotate-180": open })}
         />

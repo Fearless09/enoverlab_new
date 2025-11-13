@@ -1,11 +1,17 @@
+"use client";
 import FAQ, { Faq } from "@/components/shared/FAQ";
-import { Button } from '@/components/ui/Button';
+import Success from "@/components/shared/Success";
+import { Button } from "@/components/ui/Button";
+import InputGroup from "@/components/ui/InputGroup";
+import TextAreaGroup from "@/components/ui/TextAreaGroup";
+import { useState } from "react";
 
 const AdvisorPage = () => {
+  const [submitted, setSubmitted] = useState<boolean>(false);
   return (
     <>
       <div className="flex flex-row justify-between gap-[100px] my-15">
-        <div className="w-[629px] mx-auto grid justify-end items-end space-y-10 text-white ml-10">
+        <div className="w-[629px] mx-auto grid justify-end items-end space-y-10 items-end text-white ml-10">
           <div className='flex flex-col gap-12'>
             <h1 className='text-[45px] text-[#003AD4] font-medium'>Speak to an Advisor</h1>
             <p className="text-[20px] text-[#3D3D3D]">
@@ -43,7 +49,7 @@ const AdvisorPage = () => {
               <Button 
                 variant="primary" 
                 size="md"
-                className="text-[20px] font-light"
+                className="text-[20px] font-[300]"
                 
               >
                 Speak  To An Advisor
@@ -52,40 +58,46 @@ const AdvisorPage = () => {
           </div>
         </div>
 
-        <main className="grid flex-1">
-          <FAQ faqs={faqs[0]} />
-        </main>
-      </div>
+            <main className="grid flex-1">
+              <FAQ faqs={faqs} />
+            </main>
+          </section>
+        ) : (
+          <Success />
+        )}
+      </section>
     </>
-  )
+  );
 };
 
 export default AdvisorPage;
 
-
-const faqs: Faq[][] = [
-  [
-    {
-      question: "Why do you need my organization’s information?",
-      answer: "We collect basic details to understand your company’s goals, structure, and culture — so we can match you with the best-fit talent.",
-    },
-    {
-      question:
-        "Can individuals or startups without a registered company hire a talent?",
-      answer: "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn’t required to access talent.",
-    },
-    {
-      question: "Will my company details remain confidential?",
-      answer: "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
-    },
-    {
-      question: "What if my organization doesn’t have a website yet?",
-      answer: "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
-    },
-    {
-      question:
-        "Can I update my organization’s contact person after submitting the form?",
-      answer: "Yes — simply contact our support team, and we’ll update your records right away.",
-    },
-  ],
+const faqs: Faq[] = [
+  {
+    question: "Why do you need my organization's information?",
+    answer:
+      "We collect basic details to understand your company's goals, structure, and culture — so we can match you with the best-fit talent.",
+  },
+  {
+    question:
+      "Can individuals or startups without a registered company hire a talent?",
+    answer:
+      "Yes! We work with startups, founders, and growing teams at all stages — formal registration isn't required to access talent.",
+  },
+  {
+    question: "Will my company details remain confidential?",
+    answer:
+      "No problem. You can provide a social media handle, portfolio, or short description of your work instead.",
+  },
+  {
+    question: "What if my organization doesn't have a website yet?",
+    answer:
+      "Absolutely. All shared information is handled securely and used only for matching and communication purposes.",
+  },
+  {
+    question:
+      "Can I update my organization's contact person after submitting the form?",
+    answer:
+      "Yes — simply contact our support team, and we'll update your records right away.",
+  },
 ];

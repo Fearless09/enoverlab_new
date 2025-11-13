@@ -4,11 +4,11 @@ const Partners = () => {
   return (
     <section className="relative my-20.5">
       <section className="wrapper text-pretty">
-        <h1 className="text-primary-400 mb-9 text-center text-[40px] font-semibold">
+        <h1 className="text-primary-400 text-max-40 mb-9 text-center font-semibold">
           What our partners say
         </h1>
 
-        <main className="grid grid-cols-3 gap-5">
+        <main className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
           {partners.map(({ img, name, role, text }, index) => (
             <div
               key={index}
@@ -23,10 +23,10 @@ const Partners = () => {
                   sizes="100%"
                 />
               </div>
-              <h1 className="mt-4 text-[24px]/[160%] font-semibold text-black">
+              <h1 className="text-max-24/[160%] mt-4 font-semibold text-black">
                 {name}
               </h1>
-              <h6 className="mt-2.5 text-xl/[160%] font-light">{role}</h6>
+              <h6 className="text-max-20/[160%] mt-2.5 font-light">{role}</h6>
               <p className="mt-2 text-base/[160%] font-light">{text}</p>
             </div>
           ))}
