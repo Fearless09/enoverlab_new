@@ -23,7 +23,7 @@ const Hero = () =>{
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 w-full max-w-2xl">
+        <div className="grid grid-cols-3 gap-4 w-full">
           <div className="flex flex-col h-[500px] justify-between gap-3 rounded-[5px]">
             <img src="/partnership/hero3.png" alt="hero1" className="object-cover w-full h-[300px] bg-gray-300 rounded-2xl" />
             <div className="col-span-1 row-span-1 bg-[#CDBCE6] h-[200px] relative rounded-4xl">

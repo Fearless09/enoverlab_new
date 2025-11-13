@@ -35,10 +35,25 @@ const PartnershipProposal = () => {
         </div>
 
         <div className=" w-[80%] ">
-          <Image width={200} height={200} src="/Partnership/Iphone.png" alt="Iphone14" className="relative" />
-          <div className="relative right-38 bottom-90 text-[14px] text-center">
-            <h1>Partnership Proposal</h1>
+          <Image width={420.19} height={849.04} src="/Partnership/Iphone.png" alt="Iphone14" className="relative" />
+          <div className="absolute right-45 top-190 text-[14px] text-center">
+            <Image width={353} height={800} src="/Partnership/A4.png" alt="Iphone14" className="relative" />
+            {/* <h1>Partnership Proposal</h1>
             <h3>WHO WE ARE:</h3>
+            <p>Enoverlab – The Industry’s Leading Growth Catalyst</p>
+            <ul>
+              <li>
+                <b>Proven Industry Leaders:</b> With a track record of transforming 
+                corporate performance through innovative, results-driven training
+              </li>
+              <li>
+                <b>Our Mission: </b>To turn every department into a high-output growth engine 
+              </li>
+              <li>
+                <b>Our Edge: </b>A blend of proprietary frameworks, real-world insights, 
+                and strategic rigour that sets us apart
+              </li>
+            </ul> */}
           </div>
         </div>
       </div>

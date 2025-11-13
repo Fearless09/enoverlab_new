@@ -5,7 +5,7 @@ const AdvisorPage = () => {
   return (
     <>
       <div className="flex flex-row justify-between gap-[100px] my-15">
-        <div className="w-[629px] mx-auto grid justify-end items-end space-y-10 items-end text-white ml-10">
+        <div className="w-[629px] mx-auto grid justify-end items-end space-y-10 text-white ml-10">
           <div className='flex flex-col gap-12'>
             <h1 className='text-[45px] text-[#003AD4] font-medium'>Speak to an Advisor</h1>
             <p className="text-[20px] text-[#3D3D3D]">
@@ -43,7 +43,7 @@ const AdvisorPage = () => {
               <Button 
                 variant="primary" 
                 size="md"
-                className="text-[20px] font-[300]"
+                className="text-[20px] font-light"
                 
               >
                 Speak  To An Advisor
