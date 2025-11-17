@@ -27,7 +27,7 @@ const Hero = () => {
           <span className="bg-primary-400 absolute bottom-15 left-0 z-1 flex items-center justify-center rounded-xs px-5 py-2 font-sans text-lg font-medium text-white min-[1335px]:-left-[10%]">
             Professional
           </span>
-          <div className="relative aspect-[4.47/4.39] overflow-clip rounded-lg">
+          <div className="relative aspect-[4.47/4.39] shrink-0 overflow-clip rounded-lg">
             <Image
               alt=""
               src={"/hire_1.png"}

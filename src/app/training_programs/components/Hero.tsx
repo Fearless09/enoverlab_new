@@ -22,7 +22,7 @@ const Hero = () => {
           </UiLink>
         </main>
 
-        <main className="relative aspect-[5.32/3.95] w-full max-w-[540px] flex-1 overflow-clip rounded-lg">
+        <main className="relative aspect-[5.32/3.95] w-full max-w-[540px] flex-1 shrink-0 overflow-clip rounded-lg">
           <Image
             alt=""
             src={"/training-program/hero1.png"}

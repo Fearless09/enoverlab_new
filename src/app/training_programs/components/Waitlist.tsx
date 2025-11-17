@@ -6,7 +6,7 @@ const Waitlist = () => {
   return (
     <section className="bg-primary-400 py-[68px] text-white">
       <section className="wrapper flex max-w-6xl flex-col-reverse items-center justify-between gap-10 md:flex-row">
-        <main className="relative aspect-square w-full max-w-[500px] flex-1 overflow-clip rounded-md">
+        <main className="relative aspect-square w-full max-w-[500px] flex-1 shrink-0 overflow-clip rounded-md">
           <Image
             fill
             src={"/training-program/waitlist.png"}

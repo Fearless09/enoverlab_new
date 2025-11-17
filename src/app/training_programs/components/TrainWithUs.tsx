@@ -14,13 +14,18 @@ const TrainWithUs = () => {
       <main className="mt-16 grid grid-cols-1 gap-5 text-center text-pretty sm:grid-cols-2 md:grid-cols-3">
         {datas.map((data, index) => (
           <div key={index} className="rounded-md bg-[#E0E9FE] px-4 py-6">
-            <span className="relative inline-block size-10">
-              <Image alt={data.title} src={data.img} fill />
+            <span className="relative inline-block size-12 shrink-0">
+              <Image
+                alt={data.title}
+                src={data.img}
+                fill
+                className="origin-center object-contain"
+              />
             </span>
-            <h5 className="text-secondary text-max-24 font-semibold capitalize">
+            <h5 className="text-secondary text-max-24 mt-1.5 font-semibold capitalize">
               {data.title}
             </h5>
-            <p className="text-base/[160%] text-[#3D3D3D] sm:text-lg/[160%]">
+            <p className="mt-1 text-base/[160%] text-[#3D3D3D] sm:text-lg/[160%]">
               {data.subtitle}
             </p>
           </div>

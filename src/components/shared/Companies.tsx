@@ -7,7 +7,7 @@ const Companies = () => {
         {[...Array(5)].map((_, arrIdx) => (
           <main
             key={arrIdx}
-            className="animate-marquee flex w-full flex-nowrap items-center gap-5 pl-5"
+            className="animate-marquee flex w-max flex-nowrap items-center gap-5 pl-5"
           >
             {companies.map((company, index) => (
               <div

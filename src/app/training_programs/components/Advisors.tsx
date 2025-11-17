@@ -4,7 +4,7 @@ import Image from "next/image";
 const Advisors = () => {
   return (
     <section className="wrapper my-25 flex max-w-6xl flex-col items-center justify-between gap-x-5 gap-y-12 md:flex-row">
-      <main className="text-primary-400 max-w-[432px] text-center text-pretty md:text-left">
+      <main className="text-primary-400 max-w-[432px] flex-1 text-center text-pretty md:text-left">
         <h1 className="text-max-40 font-bold">Speak to An Advisor</h1>
         <p className="text-max-20 my-6 font-light">
           Get personalized guidance from our experts. Whether you&apos;re
@@ -16,7 +16,7 @@ const Advisors = () => {
         </UiLink>
       </main>
 
-      <main className="relative aspect-square w-full max-w-[495px] overflow-clip rounded-lg">
+      <main className="relative aspect-square w-full max-w-[495px] flex-1 shrink-0 overflow-clip rounded-lg">
         <Image
           fill
           src={"/training-program/advisor.png"}

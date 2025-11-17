@@ -17,9 +17,9 @@ const TrainingPrograms = () => {
           {programs.map((program, index) => (
             <div
               key={index}
-              className="flex justify-between gap-6 rounded-md bg-white px-4 pt-6 pb-10"
+              className="flex flex-col items-start gap-6 rounded-md bg-white px-4 pt-6 pb-10 md:flex-row md:justify-between"
             >
-              <div className="relative aspect-square w-full max-w-[140px] rounded-md">
+              <div className="relative aspect-square w-full max-w-[140px] shrink-0 rounded-md">
                 <Image alt={program.title} src={program.img} fill />
               </div>
 

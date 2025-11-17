@@ -5,7 +5,7 @@ const Talent = () => {
   return (
     <section className="relative bg-[#E0E9FE] py-20">
       <section className="wrapper ipad:flex-row flex flex-col-reverse items-center justify-between gap-x-5 gap-y-12">
-        <main className="relative aspect-[5.69/5] w-full max-w-[569px] flex-1 overflow-clip rounded-md">
+        <main className="relative aspect-[5.69/5] w-full max-w-[569px] flex-1 shrink-0 overflow-clip rounded-md">
           <Image
             alt=""
             src={"/hire_2.png"}
@@ -15,7 +15,7 @@ const Talent = () => {
           />
         </main>
 
-        <main className="text-pretty">
+        <main className="flex-1 text-pretty">
           <h1 className="text-primary-400 text-max-40/[60px] font-semibold">
             Hire our talent
           </h1>
