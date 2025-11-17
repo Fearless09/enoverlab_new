@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="mt-8 overflow-clip px-5">
       <section
         className={cn(
-          "wrapper relative flex aspect-[12.4/5] h-auto min-h-max flex-col items-center justify-center overflow-clip rounded-[10px] py-10 text-white",
+          "wrapper relative flex flex-col items-center justify-center overflow-clip rounded-[10px] py-10 text-white sm:aspect-[12.4/5]",
           "before:absolute before:inset-0 before:bg-[url(/sponsor_1.png)] before:bg-cover before:bg-center before:bg-no-repeat",
           "after:bg-primary-400/40 after:absolute after:inset-0",
         )}
