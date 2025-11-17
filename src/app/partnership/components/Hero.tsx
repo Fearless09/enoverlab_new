@@ -6,8 +6,8 @@ const Hero = () =>{
       <div className="flex flex-row wrapper justify-center items-center my-10">
         <div className="flex flex-col wrapper justify-center items-start gap-8">
           <div className="flex flex-col justify-start gap-6 text-left">
-            <h1 className="font-semibold text-5xl font-plus-jakarta-sans text-[#003AD4]">Partner with us</h1>
-            <p className="text-xl text-[#404040] font-light font-plus-jakarta-sans">
+            <h1 className="font-semibold text-5xl text-[#003AD4]">Partner with us</h1>
+            <p className="text-xl text-[#404040] font-light">
               Join force with the platform trusted by many 
               important industries to provide reliable and accountable services.
             </p>

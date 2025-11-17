@@ -18,6 +18,7 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
   --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
   --text-max-60: clamp(48px, 3vw + 1rem, 60px);
@@ -65,6 +66,6 @@
 body {
   background: #ffffff;
   color: #323232;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   line-height: 1.6;
 }

@@ -8,7 +8,7 @@ export type Nav = {
 };
 
 export const navs: Nav[] = [
-  { name: "Home", href: "/" },
+  { name: "Partnership", href: "/partnership" },
   { name: "Training Programs", href: "/training_programs" },
   { name: "Hire", href: "/hire" },
   {
@@ -19,5 +19,4 @@ export const navs: Nav[] = [
       { name: "Students", href: "/sponsor/student" },
     ],
   },
-  { name: "Partnership", href: "/partnership" },
 ];

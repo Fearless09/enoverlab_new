@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="font-plus-jakarta-sans bg-[#E0E9FE] px-4 pt-20 pb-10">
+    <footer className="bg-[#E0E9FE] px-4 pt-20 pb-10">
       <section className="wrapper">
         <section className="flex flex-wrap justify-between gap-x-10 gap-y-16">
           {/* Enoverlab Image and Social Links */}
@@ -71,15 +71,15 @@ export default function Footer() {
                 type="text"
                 name=""
                 placeholder="Fullname"
-                className="font-plus-jakarta-sans h-9 w-[152px] rounded border-0 bg-white px-4.5 text-xs font-light ring-0 outline-0"
+                className="h-9 w-[152px] rounded border-0 bg-white px-4.5 text-xs font-light ring-0 outline-0"
               />
               <input
                 type="text"
                 name=""
                 placeholder="Email Address"
-                className="font-plus-jakarta-sans h-9 w-[152px] rounded border-0 bg-white px-4.5 text-xs font-light ring-0 outline-0"
+                className="h-9 w-[152px] rounded border-0 bg-white px-4.5 text-xs font-light ring-0 outline-0"
               />
-              <button className="bg-primary-400 font-plus-jakarta-sans hover:bg-primary-300 flex h-9 w-[152px] cursor-pointer items-center justify-center rounded text-xs font-medium text-white active:scale-98">
+              <button className="bg-primary-400 hover:bg-primary-300 flex h-9 w-[152px] cursor-pointer items-center justify-center rounded text-xs font-medium text-white active:scale-98">
                 Subscribe
               </button>
             </div>

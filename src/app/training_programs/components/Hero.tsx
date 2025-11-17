@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className="text-max-60/[1.3] font-medium">
             Learn from World Class Experts Anytime and Anywhere
           </h1>
-          <p className="font-Plus Jakarta Sans text-max-20 mx-auto mt-6 mb-8 max-w-[500px] md:mx-0">
+          <p className="text-max-20 mx-auto mt-6 mb-8 max-w-[500px] md:mx-0">
             Learn from world-class experts: anytime, anywhere. Unlock expert-led
             lessons on your schedule, from any device.
           </p>
