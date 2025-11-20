@@ -1,75 +1,55 @@
+import { Button } from "@/components/ui/Button";
 import UiLink from "@/components/ui/UiLink";
-import { DownloadCloud } from "lucide-react";
+import { Download } from "lucide-react";
 import Image from "next/image";
 
 const PartnershipProposal = () => {
   return (
-    <>
-      <div className="wrapper my-10 flex flex-row items-center justify-center gap-20">
-        <div className="wrapper flex flex-col items-start justify-center gap-8">
-          <div className="flex flex-col justify-start gap-6 text-left">
-            <p className="text-xl font-light text-[#404040]">
-              This proposal outlines a partnership with Enoverlab, an
-              ACTD-accredited institute specializing in product management
-              training. Together, we will design tailored programs that build
-              practical skills, empower participants, and support your
-              organization's growth.
-            </p>
-          </div>
-          <div className="flex flex-row justify-between gap-4">
+    <section className="wrapper mt-25 text-pretty">
+      <h1 className="text-max-40 mb-12 text-center font-semibold text-[#222222]">
+        Partnership Proposal
+      </h1>
+
+      <section className="flex flex-col items-center justify-center gap-x-10 gap-y-20 md:flex-row md:justify-between">
+        <main className="w-full max-w-[670px] flex-1">
+          <p className="text-max-24 text-center font-light text-[#404040] md:text-left">
+            This proposal outlines a partnership with Enoverlab, an
+            ACTD-accredited institute specializing in product management
+            training. Together, we will design tailored programs that build
+            practical skills, empower participants, and support your
+            organization's growth.
+          </p>
+          <div className="mt-6 flex flex-col items-center justify-center gap-4 min-[330px]:flex-row md:justify-start">
             <UiLink
-              variant="primary"
+              variant="outline"
               href="/contact_us"
-              className="font-medium"
+              className="w-full max-w-[170px]"
             >
               See More
             </UiLink>
-            <UiLink
-              variant="primary"
-              href="/contact_us"
-              className="font-medium"
-            >
-              Download <DownloadCloud />
-            </UiLink>
+            <Button className="w-full max-w-[170px]">
+              Download <Download />
+            </Button>
           </div>
-        </div>
+        </main>
 
-        <div className="w-[80%]">
+        <main className="relative aspect-420/800 w-full max-w-105 flex-1 overflow-clip">
           <Image
-            width={420.19}
-            height={849.04}
+            fill
+            sizes="100%"
+            src="/Partnership/A4.png"
+            alt="Iphone14"
+            className="top-10! left-1/2! w-[89%]! -translate-x-1/2 object-contain object-center"
+          />
+          <Image
+            fill
+            sizes="100%"
             src="/Partnership/Iphone.png"
             alt="Iphone14"
-            className="relative"
           />
-          <div className="absolute top-190 right-45 text-center text-[14px]">
-            <Image
-              width={353}
-              height={800}
-              src="/Partnership/A4.png"
-              alt="Iphone14"
-              className="relative"
-            />
-            {/* <h1>Partnership Proposal</h1>
-            <h3>WHO WE ARE:</h3>
-            <p>Enoverlab – The Industry’s Leading Growth Catalyst</p>
-            <ul>
-              <li>
-                <b>Proven Industry Leaders:</b> With a track record of transforming 
-                corporate performance through innovative, results-driven training
-              </li>
-              <li>
-                <b>Our Mission: </b>To turn every department into a high-output growth engine 
-              </li>
-              <li>
-                <b>Our Edge: </b>A blend of proprietary frameworks, real-world insights, 
-                and strategic rigour that sets us apart
-              </li>
-            </ul> */}
-          </div>
-        </div>
-      </div>
-    </>
+        </main>
+      </section>
+    </section>
   );
 };
 

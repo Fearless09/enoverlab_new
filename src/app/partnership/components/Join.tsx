@@ -1,76 +1,45 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/Button"
-import InputGroup from "@/components/ui/InputGroup"
+import { Button } from "@/components/ui/Button";
+import InputGroup from "@/components/ui/InputGroup";
 import UiLink from "@/components/ui/UiLink";
-import Image from "next/image";
-
-const companies = [
-  "/partnership/Sachib_Logo.png",
-  "/company/msft.png",
-  "/company/microvest.png",
-  "/company/ulospaces.png",
-  "/company/elite.png",
-];
 
 const Join = () => {
   return (
-    <>
-      <div className="bg-[#003AD4] mb-8">
-        <div className="wrapper w-[80%] mx-auto flex flex-row justify-center items-center py-10">
-          <div className="w-[80%] mx-auto flex flex-col text-left gap-7 text-white px-15">
-            <h1>Join Our Journey & Get Early Access</h1>
-            <p>“Sponsoring participants through Enoverlab created real impact—many now have career-ready skills.”</p>
-          </div>
-          <form
-            className="w-full space-y-8"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <InputGroup 
-              placeholder="Full Name" 
-              className="h-14" 
-              required 
-            />
-            <InputGroup
-              placeholder="E-mail"
-              type="email"
-              className="h-14"
-              required
-            />
-            <UiLink 
-              variant="primary" 
-              href="/contact_us"
-              className="font-medium"
-            >
-              Contact Us
-            </UiLink>
-          </form>
-        </div>
-      </div>
+    <section className="bg- bg-primary-400 py-25 text-white">
+      <section className="wrapper flex flex-col items-center justify-center gap-x-8 gap-y-16 md:flex-row md:justify-evenly">
+        <main className="w-full max-w-[425px] flex-1 text-center md:text-left">
+          <h1 className="text-max-40 mb-15 font-semibold">
+            Join Our Journey & Get Early Access
+          </h1>
+          <p className="text-max-24 font-light">
+            “Sponsoring participants through Enoverlab created real impact—many
+            now have career-ready skills.”
+          </p>
+        </main>
 
-      
-      <section className="relative py-5">
-        <section className="wrapper overflow-hidden px-4">
-          <main className="flex flex-nowrap items-center gap-6">
-            {companies.map((company, index) => (
-              <div
-                key={index}
-                className="relative aspect-[2.74/1.01] min-w-[179px] flex-1 shrink-0 overflow-clip"
-              >
-                <Image
-                  alt={company}
-                  src={company}
-                  fill
-                  className="object-contain object-center"
-                  sizes="100%"
-                />
-              </div>
-            ))}
-          </main>
-        </section>
+        <form
+          className="w-full max-w-[365px] flex-1 space-y-8"
+          onSubmit={(e) => e.preventDefault()}
+        >
+          <InputGroup placeholder="Full Name" className="h-14" required />
+          <InputGroup
+            placeholder="E-mail"
+            type="email"
+            className="h-14"
+            required
+          />
+          <Button
+            variant="secondary"
+            type="submit"
+            className="text-primary-400 w-full hover:bg-[#e0e0e0] active:scale-98"
+          >
+            Contact Us
+          </Button>
+        </form>
       </section>
-    </>
-  )
-}
+    </section>
+  );
+};
 
 export default Join;

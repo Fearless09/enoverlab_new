@@ -1,3 +1,4 @@
+import Companies from "@/components/shared/Companies";
 import Hero from "./components/Hero";
 import Join from "./components/Join";
 import PartnershipMode from "./components/PartnershipMode";
@@ -10,6 +11,7 @@ const partnership = () => {
       <PartnershipProposal />
       <PartnershipMode />
       <Join />
+      <Companies />
     </>
   );
 };

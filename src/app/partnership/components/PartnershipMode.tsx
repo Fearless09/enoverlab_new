@@ -1,260 +1,111 @@
 import UiLink from "@/components/ui/UiLink";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
+import { FC } from "react";
 
 const PartnershipMode = () => {
   return (
-    <>
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="flex flex-row items-center justify-between gap-25 p-5">
-          <Image width={495} height={519} src={"/partnership/map.png"} alt="" />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">
-              Government Training Proposal
-            </h1>
-            <p className="text-xl">
-              We propose a partnership in which Enoverlab will provide
-              customized training to government workers, focusing on product
-              management principles, strategic thinking, and innovation tailored
-              for the public sector. Our programs combine hands-on experience
-              with practical knowledge, ensuring that participants gain skills
-              they can immediately apply in their roles
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
+    <section className="wrapper mt-19 mb-25 text-pretty">
+      <h1 className="text-max-40 mb-12 text-center font-semibold text-[#222222]">
+        Partnership Modes
+      </h1>
 
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="flex flex-row-reverse items-center justify-between gap-25 p-5">
-          <Image
-            width={495}
-            height={519}
-            src={"/partnership/girlWithMic.png"}
-            alt=""
-          />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">Church Partnership</h1>
-            <p className="text-[20px]">
-              Empowers church youth and members with market-relevant skills.
-              Aligns with church missions of equipping members for life and
-              career. Offers faith-based communities an opportunity for
-              professional development. Encourages value-driven tech talent
-              rooted in strong moral principle.
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="flex flex-row items-center justify-between gap-25 p-5">
-          <Image
-            width={495}
-            height={519}
-            src={"/partnership/picnic.png"}
-            alt=""
-          />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">Community Partnership</h1>
-            <p className="text-[20px]">
-              Builds local capacity in underserved areas. Encourages economic
-              growth through skill empowerment. Fosters goodwill between the
-              institute and grassroots communities. Bridges the gap between tech
-              knowledge and local development.
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="p=5 flex flex-row-reverse items-center justify-between gap-25">
-          <Image
-            width={495}
-            height={519}
-            src={"/partnership/lookingAtLaptop.png"}
-            alt=""
-          />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">
-              Foundation Partnership (NGO)
-            </h1>
-            <p className="text-[20px]">
-              Amplifies social impact goals by offering practical, scalable
-              skills to beneficiaries. Attracts funding and donor interest
-              through measurable outcomes like employment. Promotes sustainable
-              development goals such as education, innovation, and employment.
-              Shared platforms for awareness campaigns, events, and workshops.
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="flex flex-row items-center justify-between gap-25 p-5">
-          <Image
-            width={495}
-            height={519}
-            src={"/partnership/doubleScreen.png"}
-            alt=""
-          />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">Hire Tech Talents</h1>
-            <p className="text-[20px]">
-              Panel Sessions <br />
-              Speaker Sessions <br />
-              Profiling sessions where companies can profile talents <br />
-              Workshops <br />
-              Company Exhibitions <br />
-              Networking Opportunities <br />
-              Success Stories Exclusive <br />
-              Job Opportunities <br />
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="-5 flex flex-row-reverse items-center justify-between gap-25">
-          <Image
-            width={495}
-            height={519}
-            src={"/partnership/event.png"}
-            alt=""
-          />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">Sponsor an Event</h1>
-            <p className="text-[20px]">
-              Enhances brand image and public trust by contributing to youth
-              development and digital literacy. Fulfills Corporate Social
-              Responsibility(CSR) objectives through skill-building and
-              employment empowerment. Opportunities to co-host impactful tech
-              events and social impact projects. Tax incentives or CSR-related
-              recognitions from industry bodies.
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="flex flex-row items-center justify-between gap-25 p-5">
-          <Image
-            width={495}
-            height={519}
-            src={"/partnership/Girl.png"}
-            alt=""
-          />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">Sponsor an Student</h1>
-            <p className="text-[20px]">
-              Panel Sessions <br />
-              Speaker Sessions <br />
-              Profiling sessions where companies can profile talents <br />
-              Workshops <br />
-              Company Exhibitions <br />
-              Networking Opportunities <br />
-              Success Stories Exclusive <br />
-              Job Opportunities <br />
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mb-10 w-[80%] rounded-2xl bg-[#D8E3FF]">
-        <div className="flex flex-row-reverse items-center justify-between gap-25 p-5">
-          <Image
-            width={495}
-            height={519}
-            src={"/partnership/Gathering.png"}
-            alt=""
-          />
-          <div className="mx-auto flex w-full flex-col items-start justify-between gap-10 text-black">
-            <h1 className="text-[24px] font-bold">
-              Organize A Masterclass with Us
-            </h1>
-            <p className="text-[20px]">
-              Partner with us to host an intensive, hands-on masterclass
-              designed to equip participants with practical product management
-              and technology skills. Our expert-led sessions combine real-world
-              case studies, interactive workshops, and actionable strategies
-              that empower professionals, students, or community members to
-              thrive in today's digital economy.
-            </p>
-            <UiLink
-              variant="outline"
-              href="/training_programs/waitlist"
-              size="md"
-              className="flex flex-row justify-between gap-7 rounded-4xl border-white bg-white text-[20px] text-[#00B7F8]"
-            >
-              <p>Contact Us</p>
-              <MoveRight className="size-6" />
-            </UiLink>
-          </div>
-        </div>
-      </div>
-    </>
+      <section className="space-y-8">
+        {modes.map((item, index) => (
+          <ModeCard key={index} {...item} />
+        ))}
+      </section>
+    </section>
   );
 };
 
 export default PartnershipMode;
+
+type Mode = {
+  title: string;
+  description: string;
+  img: string;
+};
+
+const modes: Mode[] = [
+  {
+    title: "Government Training Proposal",
+    description:
+      "We propose a partnership in which Enoverlab will provide customized training to government workers, focusing on product management principles, strategic thinking, and innovation tailored for the public sector. Our programs combine hands-on experience with practical knowledge, ensuring that participants gain skills they can immediately apply in their roles",
+    img: "/partnership/map.png",
+  },
+  {
+    title: "Church Partnership",
+    description:
+      "Empowers church youth and members with market-relevant skills.\nAligns with church missions of equipping members for life and career.\nOffers faith-based communities an opportunity for professional development.\nEncourages value-driven tech talent rooted in strong moral principle.",
+    img: "/partnership/girlWithMic.png",
+  },
+  {
+    title: "Community Partnership",
+    description:
+      "Builds local capacity in underserved areas. Encourages economic growth through skill empowerment.\nFosters goodwill between the institute and grassroots communities.\nBridges the gap between tech knowledge and local development.",
+    img: "/partnership/picnic.png",
+  },
+  {
+    title: "Foundation Partnership (NGO)",
+    description:
+      "Amplifies social impact goals by offering practical, scalable skills to beneficiaries.\nAttracts funding and donor interest through measurable outcomes like employment.\nPromotes sustainable development goals such as education, innovation, and employment.\nShared platforms for awareness campaigns, events, and workshops.",
+    img: "/partnership/lookingAtLaptop.png",
+  },
+  {
+    title: "Hire Tech Talents",
+    description:
+      "Panel Sessions\nSpeaker Sessions\nProfiling sessions where companies can profile talents\nWorkshops\nCompany Exhibitions\nNetworking Opportunities\nSuccess Stories\nExclusive Job Opportunities",
+    img: "/partnership/doubleScreen.png",
+  },
+  {
+    title: "Sponsor an Event",
+    description:
+      "Enhances brand image and public trust by contributing to youth development and digital literacy.\nFulfills Corporate Social Responsibility (CSR) objectives through skill-building and employment empowerment.\nOpportunities to co-host impactful tech events and social impact projects.\nTax incentives or CSR-related recognitions from industry bodies.",
+    img: "/partnership/event.png",
+  },
+  {
+    title: "Sponsor a Student",
+    description:
+      "Panel Sessions\nSpeaker Sessions\nProfiling sessions where companies can profile talents\nWorkshops\nCompany Exhibitions\nNetworking Opportunities\nSuccess Stories\nExclusive Job Opportunities",
+    img: "/partnership/Girl.png",
+  },
+  {
+    title: "Organize A Masterclass with Us",
+    description:
+      "Partner with us to host an intensive, hands-on masterclass designed to equip participants with practical product management and technology skills. Our expert-led sessions combine real-world case studies, interactive workshops, and actionable strategies that empower professionals, students, or community members to thrive in today's digital economy.",
+    img: "/partnership/Gathering.png",
+  },
+];
+
+const ModeCard: FC<Mode> = ({ description, img, title }) => {
+  return (
+    <main className="flex flex-col-reverse items-center justify-center gap-x-6 gap-y-8 rounded-xl bg-[#D8E3FF] p-6 md:flex-row md:justify-between md:rounded-3xl md:even:flex-row-reverse lg:p-8">
+      <div className="relative aspect-416/529 w-full max-w-[416px] flex-1 overflow-clip rounded-xl md:rounded-3xl">
+        <Image
+          alt={title}
+          src={img}
+          fill
+          sizes="100%"
+          className="object-cover object-center"
+        />
+      </div>
+
+      <div className="w-full max-w-[497px] flex-1">
+        <h1 className="text-max-24 mb-5 font-bold text-[#222222]">{title}</h1>
+        <p className="text-max-20 mb-8 font-light whitespace-pre-line text-[#404040]">
+          {description}
+        </p>
+        <UiLink
+          variant="secondary"
+          href="/contact_us"
+          size="md"
+          className="text-primary-400 w-full max-w-[180px] rounded-full"
+        >
+          Contact Us
+          <MoveRight className="size-4.5" />
+        </UiLink>
+      </div>
+    </main>
+  );
+};
