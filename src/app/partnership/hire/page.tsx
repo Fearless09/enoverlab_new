@@ -35,7 +35,7 @@ const page = () => {
           />
 
           <section className="mt-19 flex justify-between gap-5">
-            <main className="w-full max-w-[720px]">
+            <main className="w-full max-w-[720px] flex-1">
               {step === 1 && <Step1 dispatcher={stepDispater} />}
               {step === 2 && <Step2 dispatcher={stepDispater} />}
               {step === 3 && <Step3 dispatcher={stepDispater} />}

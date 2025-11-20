@@ -37,14 +37,14 @@ const PartnershipProposal = () => {
           <Image
             fill
             sizes="100%"
-            src="/Partnership/A4.png"
+            src="/partnership/A4.png"
             alt="Iphone14"
             className="top-10! left-1/2! w-[89%]! -translate-x-1/2 object-contain object-center"
           />
           <Image
             fill
             sizes="100%"
-            src="/Partnership/Iphone.png"
+            src="/partnership/Iphone.png"
             alt="Iphone14"
           />
         </main>
